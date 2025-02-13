@@ -1,0 +1,63 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-99.1, 19.4]
+        },
+        "properties": {
+          "forecast_date": "15/1/2023",
+          "city": "Ciudad de México",
+          "country": "México",
+          "risk_level": "Alto",
+          "event_description": "Se prevé una temporada de sequía prolongada en la región, lo que podría provocar escasez de alimentos y agua, aumentando la presión migratoria de comunidades rurales hacia áreas urbanas en busca de recursos.",
+          "data_sources": "OpenWeather",
+          "detected_events": "Sequía prolongada",
+          "estimated_migrants": 2500,
+          "modules_needed": 80,
+          "logistics_route": "Ruta principal por carretera X1 desde Ciudad de México a Guadalajara."
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-77.0, -12.0]
+        },
+        "properties": {
+          "forecast_date": "15/1/2023",
+          "city": "Lima",
+          "country": "Peru",
+          "risk_level": "Alto",
+          "event_description": "Se espera un fuerte incremento de las lluvias en la región costera de Perú, lo cual podría provocar inundaciones y deslizamientos de tierra, afectando a comunidades vulnerables en zonas cercanas a ríos y laderas.",
+          "data_sources": "OpenWeather",
+          "detected_events": "Aumento de las precipitaciones en la región",
+          "estimated_migrants": 3000,
+          "modules_needed": 100,
+          "logistics_route": "Ruta principal por carretera Panamericana Sur desde Lima hasta Ica."
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-0.9, 41.6]
+        },
+        "properties": {
+          "forecast_date": "15/3/2024",
+          "city": "Zaragoza",
+          "country": "España",
+          "risk_level": "Medio",
+          "event_description": "Se anticipa una serie de tormentas severas que podrían causar inundaciones significativas, aumentando el riesgo de desplazamiento temporal.",
+          "data_sources": "OpenWeather",
+          "detected_events": "Tormenta severa con potencial de inundación",
+          "estimated_migrants": 800,
+          "modules_needed": 25,
+          "logistics_route": "Ruta principal por carretera A2 desde Barcelona a Zaragoza."
+        }
+      }
+    ]
+  }
+  

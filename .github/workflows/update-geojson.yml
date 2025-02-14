@@ -23,6 +23,8 @@ jobs:
           pip install requests
 
       - name: Fetch Data from Airtable and Generate GeoJSON
+        env:
+          AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
         run: |
           python generate_geojson.py
 

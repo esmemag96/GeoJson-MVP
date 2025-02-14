@@ -26,7 +26,7 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
-          git add predictions.geojson
+          git add data.geojson
           git commit -m "Auto-update GeoJSON from Airtable"
           git push origin main
       

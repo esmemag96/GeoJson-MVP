@@ -12,12 +12,24 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Configure Python Environment
         uses: actions/setup-python@v2
         with:
           python-version: 3.9
+      - name: Configure Git
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
+      - name: Commit and Push Changes
+        run: |
+          git add predictions.geojson
+          git commit -m "Auto-update GeoJSON from Airtable"
+          git push origin main
+      
       - name: Install Dependencies
         run: |
           pip install requests

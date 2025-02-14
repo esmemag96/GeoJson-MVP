@@ -1,0 +1,34 @@
+name: Update GeoJSON
+
+on:
+  schedule:
+    - cron: '30 00  * * * '  # Ejecuta cada hora
+  workflow_dispatch:  # Permite ejecución manual desde la interfaz de GitHub
+
+jobs:
+  update-geojson:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Configure Python Environment
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      - name: Install Dependencies
+        run: |
+          pip install requests
+
+      - name: Fetch Data from Airtable and Generate GeoJSON
+        run: |
+          python generate_geojson.py
+
+      - name: Commit and Push Changes (if needed)
+        run: |
+          git config user.name "GitHub Bot"
+          git config user.email "bot@github.com"
+          git diff --exit-code || git commit -am "Auto-update GeoJSON from Airtable"
+          git push origin main

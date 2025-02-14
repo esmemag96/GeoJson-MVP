@@ -1,0 +1,2345 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.9158,
+          27.8113
+        ]
+      },
+      "properties": {
+        "id": 440,
+        "type": [
+          "Standard"
+        ],
+        "status": "To be retired",
+        "capacity": 22,
+        "camp": [
+          "El Hierro"
+        ],
+        "client": "N/A",
+        "installation_date": "2024-09-12",
+        "last_maintenance": "2025-09-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.678901,
+          -55.789012
+        ]
+      },
+      "properties": {
+        "id": 373,
+        "type": [
+          "Standard"
+        ],
+        "status": "Stock",
+        "capacity": 17,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.52,
+          39.32
+        ]
+      },
+      "properties": {
+        "id": 457,
+        "type": [
+          "Standard"
+        ],
+        "status": "Reserved",
+        "capacity": 21,
+        "camp": [
+          "Lesvos"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.52,
+          39.32
+        ]
+      },
+      "properties": {
+        "id": 450,
+        "type": [
+          "Standard"
+        ],
+        "status": "To be retired",
+        "capacity": 25,
+        "camp": [
+          "Lesvos"
+        ],
+        "client": "N/A",
+        "installation_date": "2024-02-01",
+        "last_maintenance": "2026-01-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.876543,
+          -59.876543
+        ]
+      },
+      "properties": {
+        "id": 413,
+        "type": [
+          "Standard"
+        ],
+        "status": "Stock",
+        "capacity": 17,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.377734,
+          35.914013
+        ]
+      },
+      "properties": {
+        "id": 379,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 17,
+        "camp": [
+          "Ceuta"
+        ],
+        "client": "N/A",
+        "installation_date": "2024-04-04",
+        "last_maintenance": "2025-04-04"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10.54321,
+          41.987654
+        ]
+      },
+      "properties": {
+        "id": 432,
+        "type": [
+          "Standard"
+        ],
+        "status": "Under manteinance",
+        "capacity": 14,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.9158,
+          27.8113
+        ]
+      },
+      "properties": {
+        "id": 367,
+        "type": [
+          "Standard"
+        ],
+        "status": "Reserved",
+        "capacity": 13,
+        "camp": [
+          "El Hierro"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -11.6,
+          42.456789
+        ]
+      },
+      "properties": {
+        "id": 442,
+        "type": [
+          "Standard"
+        ],
+        "status": "Under manteinance",
+        "capacity": 16,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.52,
+          39.32
+        ]
+      },
+      "properties": {
+        "id": 329,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 16,
+        "camp": [
+          "Lesvos"
+        ],
+        "client": "N/A",
+        "installation_date": "2024-06-07",
+        "last_maintenance": "2026-06-07"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.987654,
+          -44.654321
+        ]
+      },
+      "properties": {
+        "id": 403,
+        "type": [
+          "Standard"
+        ],
+        "status": "Stock",
+        "capacity": 22,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.876543,
+          -52.654321
+        ]
+      },
+      "properties": {
+        "id": 446,
+        "type": [
+          "Standard"
+        ],
+        "status": "Stock",
+        "capacity": 21,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.654321,
+          -48.123456
+        ]
+      },
+      "properties": {
+        "id": 383,
+        "type": [
+          "Standard"
+        ],
+        "status": "Stock",
+        "capacity": 24,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6,
+          35.5
+        ]
+      },
+      "properties": {
+        "id": 464,
+        "type": [
+          "Standard"
+        ],
+        "status": "Reserved",
+        "capacity": 10,
+        "camp": [
+          "Lampedussa"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.432109,
+          40.56789
+        ]
+      },
+      "properties": {
+        "id": 332,
+        "type": [
+          "Standard"
+        ],
+        "status": "Under manteinance",
+        "capacity": 12,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6,
+          35.5
+        ]
+      },
+      "properties": {
+        "id": 364,
+        "type": [
+          "Standard"
+        ],
+        "status": "Reserved",
+        "capacity": 10,
+        "camp": [
+          "Lampedussa"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.3,
+          35.3
+        ]
+      },
+      "properties": {
+        "id": 468,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way",
+        "capacity": 9,
+        "camp": [
+          "Ceuta"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.54321,
+          -49.987654
+        ]
+      },
+      "properties": {
+        "id": 406,
+        "type": [
+          "Standard"
+        ],
+        "status": "Stock",
+        "capacity": 21,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.52,
+          39.32
+        ]
+      },
+      "properties": {
+        "id": 377,
+        "type": [
+          "Standard"
+        ],
+        "status": "Reserved",
+        "capacity": 21,
+        "camp": [
+          "Lesvos"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.377734,
+          35.914013
+        ]
+      },
+      "properties": {
+        "id": 345,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 20,
+        "camp": [
+          "Ceuta"
+        ],
+        "client": "N/A",
+        "installation_date": "2024-02-06",
+        "last_maintenance": "2026-02-06"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.3213,
+          35.8894
+        ]
+      },
+      "properties": {
+        "id": 337,
+        "type": [
+          "Standard"
+        ],
+        "status": "Reserved",
+        "capacity": 24,
+        "camp": [
+          "Ceuta"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0,
+          38.6
+        ]
+      },
+      "properties": {
+        "id": 441,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way back",
+        "capacity": 9,
+        "camp": [
+          "Lesvos"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6,
+          35.5
+        ]
+      },
+      "properties": {
+        "id": 384,
+        "type": [
+          "Standard"
+        ],
+        "status": "Reserved",
+        "capacity": 11,
+        "camp": [
+          "Lampedussa"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10.765432,
+          41.678901
+        ]
+      },
+      "properties": {
+        "id": 412,
+        "type": [
+          "Standard"
+        ],
+        "status": "Under manteinance",
+        "capacity": 14,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.3213,
+          35.8894
+        ]
+      },
+      "properties": {
+        "id": 394,
+        "type": [
+          "Standard"
+        ],
+        "status": "Reserved",
+        "capacity": 20,
+        "camp": [
+          "Ceuta"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.5,
+          41.0
+        ]
+      },
+      "properties": {
+        "id": 352,
+        "type": [
+          "Standard"
+        ],
+        "status": "Under manteinance",
+        "capacity": 9,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.52,
+          39.32
+        ]
+      },
+      "properties": {
+        "id": 357,
+        "type": [
+          "Standard"
+        ],
+        "status": "Reserved",
+        "capacity": 21,
+        "camp": [
+          "Lesvos"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.3213,
+          35.8894
+        ]
+      },
+      "properties": {
+        "id": 330,
+        "type": [
+          "Standard"
+        ],
+        "status": "To be retired",
+        "capacity": 25,
+        "camp": [
+          "Ceuta"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.54321,
+          -47.876543
+        ]
+      },
+      "properties": {
+        "id": 423,
+        "type": [
+          "Standard"
+        ],
+        "status": "Stock",
+        "capacity": 19,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6,
+          35.5
+        ]
+      },
+      "properties": {
+        "id": 349,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 18,
+        "camp": [
+          "Lampedussa"
+        ],
+        "client": "N/A",
+        "installation_date": "2024-09-05",
+        "last_maintenance": "2026-09-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.52,
+          39.32
+        ]
+      },
+      "properties": {
+        "id": 339,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 21,
+        "camp": [
+          "Lesvos"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.97384,
+          27.646978
+        ]
+      },
+      "properties": {
+        "id": 435,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 9,
+        "camp": [
+          "El Hierro"
+        ],
+        "client": "N/A",
+        "installation_date": "2024-01-10",
+        "last_maintenance": "2025-01-10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0,
+          39.0
+        ]
+      },
+      "properties": {
+        "id": 351,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way back",
+        "capacity": 10,
+        "camp": [
+          "Lesvos"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -12.1,
+          42.4
+        ]
+      },
+      "properties": {
+        "id": 402,
+        "type": [
+          "Standard"
+        ],
+        "status": "Under manteinance",
+        "capacity": 20,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10.987654,
+          42.345678
+        ]
+      },
+      "properties": {
+        "id": 342,
+        "type": [
+          "Standard"
+        ],
+        "status": "Under manteinance",
+        "capacity": 15,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8,
+          37.9
+        ]
+      },
+      "properties": {
+        "id": 431,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way back",
+        "capacity": 12,
+        "camp": [
+          "El Hierro"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5,
+          35.0
+        ]
+      },
+      "properties": {
+        "id": 408,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way",
+        "capacity": 9,
+        "camp": [
+          "Ceuta"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.52,
+          39.32
+        ]
+      },
+      "properties": {
+        "id": 385,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 19,
+        "camp": [
+          "Lesvos"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5,
+          38.5
+        ]
+      },
+      "properties": {
+        "id": 331,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way back",
+        "capacity": 5,
+        "camp": [
+          "Lampedussa"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.987654,
+          -45.123456
+        ]
+      },
+      "properties": {
+        "id": 363,
+        "type": [
+          "Standard"
+        ],
+        "status": "Stock",
+        "capacity": 22,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6,
+          35.5
+        ]
+      },
+      "properties": {
+        "id": 405,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 16,
+        "camp": [
+          "Lampedussa"
+        ],
+        "client": "N/A",
+        "installation_date": "2024-09-09",
+        "last_maintenance": "2025-09-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0,
+          35.2
+        ]
+      },
+      "properties": {
+        "id": 368,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way",
+        "capacity": 9,
+        "camp": [
+          "Ceuta"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.9158,
+          27.8113
+        ]
+      },
+      "properties": {
+        "id": 344,
+        "type": [
+          "Standard"
+        ],
+        "status": "Reserved",
+        "capacity": 11,
+        "camp": [
+          "El Hierro"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8,
+          37.3
+        ]
+      },
+      "properties": {
+        "id": 411,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way back",
+        "capacity": 11,
+        "camp": [
+          "El Hierro"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.9158,
+          27.8113
+        ]
+      },
+      "properties": {
+        "id": 380,
+        "type": [
+          "Standard"
+        ],
+        "status": "To be retired",
+        "capacity": 22,
+        "camp": [
+          "El Hierro"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "2026-12-02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6,
+          35.5
+        ]
+      },
+      "properties": {
+        "id": 469,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 20,
+        "camp": [
+          "Lampedussa"
+        ],
+        "client": "N/A",
+        "installation_date": "2024-10-12",
+        "last_maintenance": "2026-10-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.52,
+          39.32
+        ]
+      },
+      "properties": {
+        "id": 370,
+        "type": [
+          "Standard"
+        ],
+        "status": "To be retired",
+        "capacity": 24,
+        "camp": [
+          "Lesvos"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.52,
+          39.32
+        ]
+      },
+      "properties": {
+        "id": 390,
+        "type": [
+          "Standard"
+        ],
+        "status": "To be retired",
+        "capacity": 25,
+        "camp": [
+          "Lesvos"
+        ],
+        "client": "N/A",
+        "installation_date": "2024-04-02",
+        "last_maintenance": "2026-03-02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -11.7,
+          42.6
+        ]
+      },
+      "properties": {
+        "id": 462,
+        "type": [
+          "Standard"
+        ],
+        "status": "Under manteinance",
+        "capacity": 16,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8,
+          38.7
+        ]
+      },
+      "properties": {
+        "id": 401,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way back",
+        "capacity": 8,
+        "camp": [
+          "Lampedussa"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -11.54321,
+          41.678901
+        ]
+      },
+      "properties": {
+        "id": 372,
+        "type": [
+          "Standard"
+        ],
+        "status": "Under manteinance",
+        "capacity": 14,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5,
+          35.5
+        ]
+      },
+      "properties": {
+        "id": 438,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way",
+        "capacity": 7,
+        "camp": [
+          "Lampedussa"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -12.432109,
+          42.56789
+        ]
+      },
+      "properties": {
+        "id": 362,
+        "type": [
+          "Standard"
+        ],
+        "status": "Under manteinance",
+        "capacity": 20,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5,
+          34.8
+        ]
+      },
+      "properties": {
+        "id": 358,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way",
+        "capacity": 6,
+        "camp": [
+          "Lampedussa"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.456789,
+          -45.678901
+        ]
+      },
+      "properties": {
+        "id": 326,
+        "type": [
+          "Standard"
+        ],
+        "status": "Stock",
+        "capacity": 10,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.52,
+          39.32
+        ]
+      },
+      "properties": {
+        "id": 347,
+        "type": [
+          "Standard"
+        ],
+        "status": "Reserved",
+        "capacity": 17,
+        "camp": [
+          "Lesvos"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.52,
+          39.32
+        ]
+      },
+      "properties": {
+        "id": 417,
+        "type": [
+          "Standard"
+        ],
+        "status": "Reserved",
+        "capacity": 21,
+        "camp": [
+          "Lesvos"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.377734,
+          35.914013
+        ]
+      },
+      "properties": {
+        "id": 419,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 15,
+        "camp": [
+          "Ceuta"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.97384,
+          27.646978
+        ]
+      },
+      "properties": {
+        "id": 455,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 9,
+        "camp": [
+          "El Hierro"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10.654321,
+          41.456789
+        ]
+      },
+      "properties": {
+        "id": 392,
+        "type": [
+          "Standard"
+        ],
+        "status": "Under manteinance",
+        "capacity": 15,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.52,
+          39.32
+        ]
+      },
+      "properties": {
+        "id": 355,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 15,
+        "camp": [
+          "Lesvos"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.377734,
+          35.914013
+        ]
+      },
+      "properties": {
+        "id": 439,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 14,
+        "camp": [
+          "Ceuta"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.52,
+          39.32
+        ]
+      },
+      "properties": {
+        "id": 430,
+        "type": [
+          "Standard"
+        ],
+        "status": "To be retired",
+        "capacity": 25,
+        "camp": [
+          "Lesvos"
+        ],
+        "client": "N/A",
+        "installation_date": "2024-02-12",
+        "last_maintenance": "2025-02-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2,
+          38.5
+        ]
+      },
+      "properties": {
+        "id": 421,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way back",
+        "capacity": 9,
+        "camp": [
+          "Lesvos"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.9158,
+          27.8113
+        ]
+      },
+      "properties": {
+        "id": 360,
+        "type": [
+          "Standard"
+        ],
+        "status": "To be retired",
+        "capacity": 19,
+        "camp": [
+          "El Hierro"
+        ],
+        "client": "N/A",
+        "installation_date": "2024-07-07",
+        "last_maintenance": "2026-07-07"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.52,
+          39.32
+        ]
+      },
+      "properties": {
+        "id": 365,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 18,
+        "camp": [
+          "Lesvos"
+        ],
+        "client": "N/A",
+        "installation_date": "2024-02-04",
+        "last_maintenance": "2026-02-04"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.9158,
+          27.8113
+        ]
+      },
+      "properties": {
+        "id": 447,
+        "type": [
+          "Standard"
+        ],
+        "status": "Reserved",
+        "capacity": 13,
+        "camp": [
+          "El Hierro"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.9158,
+          27.8113
+        ]
+      },
+      "properties": {
+        "id": 420,
+        "type": [
+          "Standard"
+        ],
+        "status": "To be retired",
+        "capacity": 24,
+        "camp": [
+          "El Hierro"
+        ],
+        "client": "N/A",
+        "installation_date": "2024-06-12",
+        "last_maintenance": "2025-06-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10.654321,
+          41.876543
+        ]
+      },
+      "properties": {
+        "id": 452,
+        "type": [
+          "Standard"
+        ],
+        "status": "Under manteinance",
+        "capacity": 14,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.876543,
+          -55.789012
+        ]
+      },
+      "properties": {
+        "id": 453,
+        "type": [
+          "Standard"
+        ],
+        "status": "Stock",
+        "capacity": 18,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.3213,
+          35.8894
+        ]
+      },
+      "properties": {
+        "id": 354,
+        "type": [
+          "Standard"
+        ],
+        "status": "Reserved",
+        "capacity": 12,
+        "camp": [
+          "Ceuta"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.9158,
+          27.8113
+        ]
+      },
+      "properties": {
+        "id": 400,
+        "type": [
+          "Standard"
+        ],
+        "status": "To be retired",
+        "capacity": 22,
+        "camp": [
+          "El Hierro"
+        ],
+        "client": "N/A",
+        "installation_date": "2024-11-12",
+        "last_maintenance": "2025-11-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5,
+          37.8
+        ]
+      },
+      "properties": {
+        "id": 391,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way back",
+        "capacity": 12,
+        "camp": [
+          "El Hierro"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0,
+          34.5
+        ]
+      },
+      "properties": {
+        "id": 328,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way",
+        "capacity": 8,
+        "camp": [
+          "Lampedussa"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0,
+          38.2
+        ]
+      },
+      "properties": {
+        "id": 381,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way back",
+        "capacity": 9,
+        "camp": [
+          "Lesvos"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.987654,
+          -12.345678
+        ]
+      },
+      "properties": {
+        "id": 336,
+        "type": [
+          "Standard"
+        ],
+        "status": "Stock",
+        "capacity": 14,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.3213,
+          35.8894
+        ]
+      },
+      "properties": {
+        "id": 374,
+        "type": [
+          "Standard"
+        ],
+        "status": "Reserved",
+        "capacity": 22,
+        "camp": [
+          "Ceuta"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6,
+          35.5
+        ]
+      },
+      "properties": {
+        "id": 335,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 6,
+        "camp": [
+          "Lampedussa"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.987654,
+          -60.123456
+        ]
+      },
+      "properties": {
+        "id": 333,
+        "type": [
+          "Standard"
+        ],
+        "status": "Stock",
+        "capacity": 22,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.654321,
+          -40.123456
+        ]
+      },
+      "properties": {
+        "id": 416,
+        "type": [
+          "Standard"
+        ],
+        "status": "Stock",
+        "capacity": 14,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.9,
+          37.7
+        ]
+      },
+      "properties": {
+        "id": 451,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way back",
+        "capacity": 12,
+        "camp": [
+          "El Hierro"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.3213,
+          35.8894
+        ]
+      },
+      "properties": {
+        "id": 454,
+        "type": [
+          "Standard"
+        ],
+        "status": "Reserved",
+        "capacity": 22,
+        "camp": [
+          "Ceuta"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.3213,
+          35.8894
+        ]
+      },
+      "properties": {
+        "id": 414,
+        "type": [
+          "Standard"
+        ],
+        "status": "Reserved",
+        "capacity": 22,
+        "camp": [
+          "Ceuta"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.377734,
+          35.914013
+        ]
+      },
+      "properties": {
+        "id": 399,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 14,
+        "camp": [
+          "Ceuta"
+        ],
+        "client": "N/A",
+        "installation_date": "2023-02-12",
+        "last_maintenance": "2025-01-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.0,
+          38.8
+        ]
+      },
+      "properties": {
+        "id": 341,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way back",
+        "capacity": 7,
+        "camp": [
+          "El Hierro"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.876543,
+          -53.765432
+        ]
+      },
+      "properties": {
+        "id": 466,
+        "type": [
+          "Standard"
+        ],
+        "status": "Stock",
+        "capacity": 21,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.97384,
+          27.646978
+        ]
+      },
+      "properties": {
+        "id": 415,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 10,
+        "camp": [
+          "El Hierro"
+        ],
+        "client": "N/A",
+        "installation_date": "2024-06-10",
+        "last_maintenance": "2025-06-10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.123456,
+          -52.789012
+        ]
+      },
+      "properties": {
+        "id": 386,
+        "type": [
+          "Standard"
+        ],
+        "status": "Stock",
+        "capacity": 23,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.97384,
+          27.646978
+        ]
+      },
+      "properties": {
+        "id": 395,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 10,
+        "camp": [
+          "El Hierro"
+        ],
+        "client": "N/A",
+        "installation_date": "2023-09-12",
+        "last_maintenance": "2025-08-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.9158,
+          27.8113
+        ]
+      },
+      "properties": {
+        "id": 460,
+        "type": [
+          "Standard"
+        ],
+        "status": "To be retired",
+        "capacity": 22,
+        "camp": [
+          "El Hierro"
+        ],
+        "client": "N/A",
+        "installation_date": "2024-05-01",
+        "last_maintenance": "2026-04-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.52,
+          39.32
+        ]
+      },
+      "properties": {
+        "id": 465,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 18,
+        "camp": [
+          "Lesvos"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.52,
+          39.32
+        ]
+      },
+      "properties": {
+        "id": 404,
+        "type": [
+          "Standard"
+        ],
+        "status": "Reserved",
+        "capacity": 12,
+        "camp": [
+          "Lesvos"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.456789,
+          -30.678901
+        ]
+      },
+      "properties": {
+        "id": 376,
+        "type": [
+          "Standard"
+        ],
+        "status": "Stock",
+        "capacity": 14,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.5,
+          38.0
+        ]
+      },
+      "properties": {
+        "id": 361,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way back",
+        "capacity": 8,
+        "camp": [
+          "Lesvos"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.52,
+          39.32
+        ]
+      },
+      "properties": {
+        "id": 409,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 20,
+        "camp": [
+          "Lesvos"
+        ],
+        "client": "N/A",
+        "installation_date": "2024-04-10",
+        "last_maintenance": "2025-04-10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.987654,
+          -32.56789
+        ]
+      },
+      "properties": {
+        "id": 353,
+        "type": [
+          "Standard"
+        ],
+        "status": "Stock",
+        "capacity": 24,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6,
+          35.5
+        ]
+      },
+      "properties": {
+        "id": 444,
+        "type": [
+          "Standard"
+        ],
+        "status": "Reserved",
+        "capacity": 10,
+        "camp": [
+          "Lampedussa"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.54321,
+          -48.876543
+        ]
+      },
+      "properties": {
+        "id": 443,
+        "type": [
+          "Standard"
+        ],
+        "status": "Stock",
+        "capacity": 19,
+        "camp": "N/A",
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.9158,
+          27.8113
+        ]
+      },
+      "properties": {
+        "id": 467,
+        "type": [
+          "Standard"
+        ],
+        "status": "Reserved",
+        "capacity": 13,
+        "camp": [
+          "El Hierro"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.8,
+          35.7
+        ]
+      },
+      "properties": {
+        "id": 458,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way",
+        "capacity": 7,
+        "camp": [
+          "Lampedussa"
+        ],
+        "client": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A"
+      }
+    }
+  ]
+}

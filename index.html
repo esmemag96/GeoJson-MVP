@@ -27,7 +27,7 @@
         "pk.eyJ1IjoiZXNtZXJhbGRhbSIsImEiOiJjbTc0cGF1Z2swZDBoMmpxeTJ3czg3cDEzIn0.cTCbN8IRIrxTelPv4lVKDQ";
       const map = new mapboxgl.Map({
         container: "map",
-        style: "mapbox://styles/mapbox/dark-v10",
+        style: "mapbox://styles/mapbox/light-v10",
         center: [-72.2119, 14.6311],
         zoom: 2,
       });
@@ -38,40 +38,49 @@
           data: "https://esmemag96.github.io/GeoJson-MVP/data.geojson",
         });
 
-  // Capa de puntos mejorada
-  map.addLayer({
-    id: 'circle-layer',
-    type: 'circle',
-    source: 'geojson-source',
-    paint: {
-      // Color del punto basado en el nivel de riesgo
-      'circle-color': [
-        'match',
-        ['get', 'risk_level'],
-        'Alto', '#FF5733',
-        'Medio', '#FFC300',
-        'Bajo', '#DAF7A6',
-        '#AAAAAA'
-      ],
-      'circle-radius': [
-        'interpolate',
-        ['linear'],
-        ['get', 'estimated_migrants'],
-        0, 5,
-        5000, 20
-      ],
-      'circle-opacity': 0.8,
-      'circle-stroke-width': 1,
-      'circle-stroke-color': '#000'
-    }
-  });
+        map.addSource("modules", {
+          type: "geojson",
+          data: "https://esmemag96.github.io/GeoJson-MVP/modules.geojson",
+        });
 
-  // Pop-up para mostrar detalles al hacer clic en un punto
-  map.on('click', 'circle-layer', function(e) {
-    const coordinates = e.features[0].geometry.coordinates.slice();
-    const properties = e.features[0].properties;
+        // Capa de puntos mejorada
+        map.addLayer({
+          id: "circle-layer",
+          type: "circle",
+          source: "geojson-source",
+          paint: {
+            "circle-color": [
+              "match",
+              ["get", "risk_level"],
+              "Alto",
+              "#FF5733",
+              "Medio",
+              "#FFC300",
+              "Bajo",
+              "#DAF7A6",
+              "#AAAAAA",
+            ],
+            "circle-radius": [
+              "interpolate",
+              ["linear"],
+              ["get", "estimated_migrants"],
+              0,
+              5,
+              5000,
+              20,
+            ],
+            "circle-opacity": 0.8,
+            "circle-stroke-width": 1,
+            "circle-stroke-color": "#000",
+          },
+        });
 
-    const description = `
+        // Pop-up para la capa de puntos
+        map.on("click", "circle-layer", function (e) {
+          const coordinates = e.features[0].geometry.coordinates.slice();
+          const properties = e.features[0].properties;
+
+          const description = `
       <strong>Ciudad:</strong> ${properties.city}<br>
       <strong>País:</strong> ${properties.country}<br>
       <strong>Nivel de riesgo:</strong> ${properties.risk_level}<br>
@@ -81,22 +90,77 @@
       <strong>Ruta logística:</strong> ${properties.logistics_route}
     `;
 
-    new mapboxgl.Popup()
-      .setLngLat(coordinates)
-      .setHTML(description)
-      .addTo(map);
-  });
+          new mapboxgl.Popup()
+            .setLngLat(coordinates)
+            .setHTML(description)
+            .addTo(map);
+        });
 
-  // Cambiar el cursor a "pointer" cuando pase sobre un punto
-  map.on('mouseenter', 'circle-layer', function() {
-    map.getCanvas().style.cursor = 'pointer';
-  });
+        map.on("mouseenter", "circle-layer", function () {
+          map.getCanvas().style.cursor = "pointer";
+        });
 
-  // Volver el cursor a "default" cuando salga del punto
-  map.on('mouseleave', 'circle-layer', function() {
-    map.getCanvas().style.cursor = '';
-  });
-});
+        map.on("mouseleave", "circle-layer", function () {
+          map.getCanvas().style.cursor = "";
+        });
+
+        // Añadir la capa para los módulos
+        map.addLayer({
+          id: "modules-layer",
+          type: "circle",
+          source: "modules",
+          paint: {
+            "circle-color": [
+              "match",
+              ["get", "status"],
+              "In use",
+              "#1f78b4", // Azul
+              "Reserved",
+              "#33a02c", // Verde
+              "To be retired",
+              "#e31a1c", // Rojo
+              "Stock",
+              "#ff7f00", // Naranja
+              "Under manteinance",
+              "#6a3d9a", // Morado
+              "On the way",
+              "#b2df8a", // Turquesa
+              "On the way back",
+              "#fca1e7", // Rosa
+              "#bdbdbd", // Gris para el resto
+            ],
+            "circle-radius": 10,
+            "circle-opacity": 0.9,
+          },
+        });
+
+        // Pop-up para los módulos
+        map.on("click", "modules-layer", (e) => {
+          const properties = e.features[0].properties;
+          new mapboxgl.Popup()
+            .setLngLat(e.lngLat)
+            .setHTML(
+              `
+        <h3>Módulo ID: ${properties.id}</h3>
+        <p><strong>Status:</strong> ${properties.status}</p>
+        <p><strong>Capacity:</strong> ${properties.capacity}</p>
+        <p><strong>Camp:</strong> ${properties.camp || "N/A"}</p>
+        <p><strong>Last Maintenance:</strong> ${
+          properties.last_maintenance || "N/A"
+        }</p>
+      `
+            )
+            .addTo(map);
+        });
+
+        map.on("mouseenter", "modules-layer", () => {
+          map.getCanvas().style.cursor = "pointer";
+        });
+
+        map.on("mouseleave", "modules-layer", () => {
+          map.getCanvas().style.cursor = "";
+        });
+      });
     </script>
   </body>
 </html>

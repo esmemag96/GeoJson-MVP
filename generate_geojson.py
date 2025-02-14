@@ -4,6 +4,10 @@ import os
 
 # Configuración de Airtable
 AIRTABLE_API_KEY = os.getenv("AIRTABLE_API_KEY")
+if AIRTABLE_API_KEY:
+    print("API Key encontrada.")
+else:
+    print("API Key no encontrada.")
 BASE_ID = "app10QmnnP1ZfM2Ns"
 TABLE_NAME = "Predictions"
 API_URL = f"https://api.airtable.com/v0/{BASE_ID}/{TABLE_NAME}"

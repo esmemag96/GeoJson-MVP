@@ -1,63 +1,85 @@
 {
-    "type": "FeatureCollection",
-    "features": [
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-99.1, 19.4]
-        },
-        "properties": {
-          "forecast_date": "15/1/2023",
-          "city": "Ciudad de México",
-          "country": "México",
-          "risk_level": "Alto",
-          "event_description": "Se prevé una temporada de sequía prolongada en la región, lo que podría provocar escasez de alimentos y agua, aumentando la presión migratoria de comunidades rurales hacia áreas urbanas en busca de recursos.",
-          "data_sources": "OpenWeather",
-          "detected_events": "Sequía prolongada",
-          "estimated_migrants": 2500,
-          "modules_needed": 80,
-          "logistics_route": "Ruta principal por carretera X1 desde Ciudad de México a Guadalajara."
-        }
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4125,
+          23.8103
+        ]
       },
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-77.0, -12.0]
-        },
-        "properties": {
-          "forecast_date": "15/1/2023",
-          "city": "Lima",
-          "country": "Peru",
-          "risk_level": "Alto",
-          "event_description": "Se espera un fuerte incremento de las lluvias en la región costera de Perú, lo cual podría provocar inundaciones y deslizamientos de tierra, afectando a comunidades vulnerables en zonas cercanas a ríos y laderas.",
-          "data_sources": "OpenWeather",
-          "detected_events": "Aumento de las precipitaciones en la región",
-          "estimated_migrants": 3000,
-          "modules_needed": 100,
-          "logistics_route": "Ruta principal por carretera Panamericana Sur desde Lima hasta Ica."
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-0.9, 41.6]
-        },
-        "properties": {
-          "forecast_date": "15/3/2024",
-          "city": "Zaragoza",
-          "country": "España",
-          "risk_level": "Medio",
-          "event_description": "Se anticipa una serie de tormentas severas que podrían causar inundaciones significativas, aumentando el riesgo de desplazamiento temporal.",
-          "data_sources": "OpenWeather",
-          "detected_events": "Tormenta severa con potencial de inundación",
-          "estimated_migrants": 800,
-          "modules_needed": 25,
-          "logistics_route": "Ruta principal por carretera A2 desde Barcelona a Zaragoza."
-        }
+      "properties": {
+        "forecast_date": "2024-06-15",
+        "city": "Dacca",
+        "country": "Bangladesh",
+        "risk_level": "Alto",
+        "event_description": "Inundaciones severas anticipadas debido a patrones monz\u00f3nicos extremos y elevaci\u00f3n del nivel del mar, altamente probable que causen movimientos migratorios internos.",
+        "estimated_migrants": 5000,
+        "modules_needed": 200,
+        "logistics_route": "Ruta principal por carretera desde Chittagong a Dacca."
       }
-    ]
-  }
-  
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.8891,
+          41.6488
+        ]
+      },
+      "properties": {
+        "forecast_date": "2024-03-15",
+        "city": "Zaragoza",
+        "country": "Espa\u00f1a",
+        "risk_level": "Medio",
+        "event_description": "Se anticipa una serie de tormentas severas que podr\u00edan causar inundaciones significativas, aumentando el riesgo de desplazamiento temporal.",
+        "estimated_migrants": 800,
+        "modules_needed": 25,
+        "logistics_route": "Ruta principal por carretera A2 desde Barcelona a Zaragoza."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1332,
+          19.4326
+        ]
+      },
+      "properties": {
+        "forecast_date": "2023-01-15",
+        "city": "Ciudad de M\u00e9xico",
+        "country": "M\u00e9xico",
+        "risk_level": "Alto",
+        "event_description": "Se prev\u00e9 una temporada de sequ\u00eda prolongada en la regi\u00f3n, lo que podr\u00eda provocar escasez de alimentos y agua, aumentando la presi\u00f3n migratoria de comunidades rurales hacia \u00e1reas urbanas en busca de recursos.",
+        "estimated_migrants": 2500,
+        "modules_needed": 80,
+        "logistics_route": "Ruta principal por carretera X1 desde Ciudad de M\u00e9xico a Guadalajara."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0428,
+          -12.0464
+        ]
+      },
+      "properties": {
+        "forecast_date": "2023-01-15",
+        "city": "Lima",
+        "country": "Peru",
+        "risk_level": "Alto",
+        "event_description": "Se espera un fuerte incremento de las lluvias en la regi\u00f3n costera de Per\u00fa, lo cual podr\u00eda provocar inundaciones y deslizamientos de tierra, afectando a comunidades vulnerables en zonas cercanas a r\u00edos y laderas.",
+        "estimated_migrants": 3000,
+        "modules_needed": 100,
+        "logistics_route": "Ruta principal por carretera Panamericana Sur desde Lima hasta Ica."
+      }
+    }
+  ]
+}

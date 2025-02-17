@@ -25,7 +25,6 @@ def fetch_airtable_data(table_name):
         return []
     
     return data["records"]
-
 # Obtener datos de Settlements y Camps
 settlements_data = fetch_airtable_data(SETTLEMENTS_TABLE)
 camps_data = fetch_airtable_data(CAMPS_TABLE)
@@ -54,8 +53,8 @@ for record in settlements_data:
 
     if "Longitude" in fields and "Latitude" in fields:
         try:
-            longitude = float(fields["Longitude"].replace(",", "."))
-            latitude = float(fields["Latitude"].replace(",", "."))
+            longitude = float(fields["Longitude"])  # Ya no convertimos comas a puntos
+            latitude = float(fields["Latitude"])
         except ValueError:
             print(f"Error en coordenadas para {fields.get('Name', 'N/A')}: {fields['Latitude']}, {fields['Longitude']}")
             continue

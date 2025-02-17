@@ -48,8 +48,8 @@ for camp in camps_data:
 
     camps_dict[camp_id] = {
         "camp_name": fields.get("Name", "Desconocido"),
-        "clients": fields.get("Clients", "Sin clientes"),
-        "modules_count": fields.get("Recuento (Modules)", "0"),
+        "clients": fields.get("Client Name", "Sin clientes"),
+        "modules_count": fields.get("Number of Modules", "0"),
     }
 
 # Crear el GeoJSON
@@ -61,7 +61,7 @@ geojson = {
 # Procesar Settlements y unir datos de Camps
 for record in settlements_data:
     fields = record["fields"]
-    
+
     if "Longitude" in fields and "Latitude" in fields:
         try:
             longitude = float(fields["Longitude"])
@@ -70,15 +70,25 @@ for record in settlements_data:
             print(f"Error en coordenadas para {fields.get('Name', 'N/A')}: {fields['Latitude']}, {fields['Longitude']}")
             continue
 
-        camp_id = str(fields.get("Camps", "")).strip()  # ID del campamento
-        
-        # Datos del campamento correspondiente
-        camp_info = camps_dict.get(camp_id, {
-            "camp_name": "No asignado",
-            "clients": "Desconocido",
-            "modules_count": "0"
-        })
+        # Obtener la lista de campamentos asociados
+        camp_ids = fields.get("Camps", [])
+        if not isinstance(camp_ids, list):
+            camp_ids = [str(camp_ids)]  # Convertir a lista si es un solo valor
 
+        camp_names = []
+        clients = []
+        modules_counts = []
+
+        for camp_id in camp_ids:
+            camp_id_str = str(camp_id).strip()  # Asegurar que coincida con los IDs en camps_dict
+            camp_info = camps_dict.get(camp_id_str, None)
+
+            if camp_info:
+                camp_names.append(camp_info.get("camp_name", "No asignado"))
+                clients.append(str(camp_info.get("clients", "Desconocido")))
+                modules_counts.append(str(camp_info.get("modules_count", "0")))
+
+        # Convertir listas en strings separados por coma
         feature = {
             "type": "Feature",
             "geometry": {
@@ -88,9 +98,9 @@ for record in settlements_data:
             "properties": {
                 "id": fields.get("ID", "N/A"),
                 "settlement_name": fields.get("Name", "N/A"),
-                "clients": camp_info["clients"],
-                "modules_count": camp_info["modules_count"],
-                "camp_name": camp_info["camp_name"],
+                "clients": ", ".join(clients) if clients else "N/A",
+                "modules_count": ", ".join(modules_counts) if modules_counts else "N/A",
+                "camp_name": ", ".join(camp_names) if camp_names else "N/A",
             }
         }
         geojson["features"].append(feature)

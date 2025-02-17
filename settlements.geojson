@@ -1,0 +1,73 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.52,
+          39.32
+        ]
+      },
+      "properties": {
+        "id": 2,
+        "settlement_name": "Lesvos",
+        "clients": "N/A",
+        "modules_count": "N/A",
+        "camp_name": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6,
+          35.5
+        ]
+      },
+      "properties": {
+        "id": 3,
+        "settlement_name": "Lampedussa",
+        "clients": "N/A",
+        "modules_count": "N/A",
+        "camp_name": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.97384,
+          27.646978
+        ]
+      },
+      "properties": {
+        "id": 1,
+        "settlement_name": "El Hierro",
+        "clients": "N/A",
+        "modules_count": "N/A",
+        "camp_name": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.377734,
+          35.914013
+        ]
+      },
+      "properties": {
+        "id": 4,
+        "settlement_name": "Ceuta",
+        "clients": "N/A",
+        "modules_count": "N/A",
+        "camp_name": "N/A"
+      }
+    }
+  ]
+}

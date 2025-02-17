@@ -10,8 +10,13 @@ else:
     print("API Key no encontrada.")
 
 BASE_ID = "app10QmnnP1ZfM2Ns"
-SETTLEMENTS_TABLE = "Settlements"  # Nombre de la tabla de Settlements
-CAMPS_TABLE = "Camps"  # Nombre de la tabla de Camps
+SETTLEMENTS_TABLE = "Settlements"
+CAMPS_TABLE = "Camps"
+
+API_URL_SETTLEMENTS = f"https://api.airtable.com/v0/{BASE_ID}/{SETTLEMENTS_TABLE}"
+API_URL_CAMPS = f"https://api.airtable.com/v0/{BASE_ID}/{CAMPS_TABLE}"
+
+headers = {"Authorization": f"Bearer {AIRTABLE_API_KEY}"}
 
 # Función para obtener datos desde Airtable
 def fetch_airtable_data(table_name):

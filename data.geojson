@@ -80,6 +80,46 @@
         "modules_needed": 100,
         "logistics_route": "Ruta principal por carretera Panamericana Sur desde Lima hasta Ica."
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.3088,
+          35.8894
+        ]
+      },
+      "properties": {
+        "forecast_date": "2024-01-15",
+        "city": "Ceuta",
+        "country": "Espa\u00f1a",
+        "risk_level": "Alto",
+        "event_description": "Se ha detectado un riesgo significativo de desplazamiento migratorio debido a la situaci\u00f3n en Mali. El volumen indicado de personas (28392188) sugiere una posible crisis migratoria hacia Ceuta.",
+        "estimated_migrants": 10000,
+        "modules_needed": 500,
+        "logistics_route": "Ruta mar\u00edtima desde el puerto de Algeciras a Ceuta, complementada con rutas terrestres hasta los asentamientos locales."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.9202,
+          27.7954
+        ]
+      },
+      "properties": {
+        "forecast_date": "2025-02-27",
+        "city": "El Hierro",
+        "country": "Espa\u00f1a",
+        "risk_level": "Medio",
+        "event_description": "La isla de El Hierro se encuentra recibiendo un flujo constante de migrantes procedentes de Nigeria. El n\u00famero de migrantes esperados es de 90 personas. Dada la necesidad de reemplazo de algunos m\u00f3dulos y la solicitud de 15 m\u00f3dulos nuevos, plantea un riesgo de nivel medio debido a la capacidad limitada de infraestructuras en la isla. Adem\u00e1s, el traslado de personas desde Nigeria a El Hierro a lo largo del tiempo puede convertirse en un patr\u00f3n de desplazamiento forzado debido a condiciones adversas en el pa\u00eds de origen.",
+        "estimated_migrants": 90,
+        "modules_needed": 15,
+        "logistics_route": "Ruta principal por v\u00eda mar\u00edtima desde Tenerife a El Hierro, seguido de distribuci\u00f3n local en la isla."
+      }
     }
   ]
 }

@@ -25,20 +25,26 @@ def fetch_airtable_data(table_name):
         return []
     
     return data["records"]
+# Función para obtener datos de Airtable
+def fetch_airtable_data(api_url):
+    response = requests.get(api_url, headers=headers)
+    data = response.json()
+    return data.get("records", [])
+
 # Obtener datos de Settlements y Camps
-settlements_data = fetch_airtable_data(SETTLEMENTS_TABLE)
-camps_data = fetch_airtable_data(CAMPS_TABLE)
+settlements_data = fetch_airtable_data(API_URL_SETTLEMENTS)
+camps_data = fetch_airtable_data(API_URL_CAMPS)
 
 # Crear un diccionario con los datos de Camps para acceso rápido
 camps_dict = {}
 for camp in camps_data:
     fields = camp["fields"]
-    camp_id = str(fields.get("ID", "N/A"))  # Convertimos el ID en string por seguridad
+    camp_id = str(fields.get("ID", "")).strip()  # Convertimos el ID en string limpio
 
     camps_dict[camp_id] = {
-        "camp_name": fields.get("Name", "N/A"),
-        "clients": fields.get("Clients", "N/A"),
-        "modules_count": fields.get("Recuento (Modules)", "N/A"),
+        "camp_name": fields.get("Name", "Desconocido"),
+        "clients": fields.get("Clients", "Sin clientes"),
+        "modules_count": fields.get("Recuento (Modules)", "0"),
     }
 
 # Crear el GeoJSON
@@ -50,19 +56,23 @@ geojson = {
 # Procesar Settlements y unir datos de Camps
 for record in settlements_data:
     fields = record["fields"]
-
+    
     if "Longitude" in fields and "Latitude" in fields:
         try:
-            longitude = float(fields["Longitude"])  # Ya no convertimos comas a puntos
+            longitude = float(fields["Longitude"])
             latitude = float(fields["Latitude"])
         except ValueError:
             print(f"Error en coordenadas para {fields.get('Name', 'N/A')}: {fields['Latitude']}, {fields['Longitude']}")
             continue
 
-        camp_id = str(fields.get("Camps", "N/A"))  # ID del campamento
-
+        camp_id = str(fields.get("Camps", "")).strip()  # ID del campamento
+        
         # Datos del campamento correspondiente
-        camp_info = camps_dict.get(camp_id, {})
+        camp_info = camps_dict.get(camp_id, {
+            "camp_name": "No asignado",
+            "clients": "Desconocido",
+            "modules_count": "0"
+        })
 
         feature = {
             "type": "Feature",
@@ -73,9 +83,9 @@ for record in settlements_data:
             "properties": {
                 "id": fields.get("ID", "N/A"),
                 "settlement_name": fields.get("Name", "N/A"),
-                "clients": camp_info.get("clients", "N/A"),
-                "modules_count": camp_info.get("modules_count", "N/A"),
-                "camp_name": camp_info.get("camp_name", "N/A"),
+                "clients": camp_info["clients"],
+                "modules_count": camp_info["modules_count"],
+                "camp_name": camp_info["camp_name"],
             }
         }
         geojson["features"].append(feature)
@@ -84,4 +94,4 @@ for record in settlements_data:
 with open("settlements.geojson", "w", encoding="utf-8") as file:
     json.dump(geojson, file, indent=2, ensure_ascii=False)
 
-print("settlements.geojson generado exitosamente.")
+print("✅ settlements.geojson generado exitosamente.")

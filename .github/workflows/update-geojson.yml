@@ -24,7 +24,7 @@ jobs:
         run: |
           pip install requests
 
-      - name: Fetch Data from Airtable and Generate GeoJSON
+      - name: Fetch Predictions Data from Airtable and Generate data.geojson
         env:
           AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
         run: |
@@ -36,10 +36,16 @@ jobs:
         run: |
           python generate_modules.py
 
+      - name: Fetch Settlements Data from Airtable and Generate settlements.geojson
+        env:
+          AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
+        run: |
+          python generate_settlements.py
+
       - name: Commit and Push Changes (if needed)
         run: |
           git config user.name "GitHub Bot"
           git config user.email "bot@github.com"
-          git add data.geojson modules.geojson
+          git add data.geojson modules.geojson settlements.geojson
           git diff --cached --exit-code || git commit -m "Auto-update GeoJSON files from Airtable"
           git push origin main

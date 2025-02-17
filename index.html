@@ -14,21 +14,28 @@
   <body>
     <div id="map"></div>
     <div id="controls">
-      <div class="switch-container">
-        <label class="switch">
-          <input type="checkbox" id="toggle-predictions" checked />
-          <span class="slider"></span>
-        </label>
-        <span class="switch-label">Mostrar Predicciones</span>
+        <div class="switch-container">
+          <label class="switch">
+            <input type="checkbox" id="toggle-predictions" checked />
+            <span class="slider"></span>
+          </label>
+          <span class="switch-label">Mostrar Predicciones</span>
+        </div>
+        <div class="switch-container">
+          <label class="switch">
+            <input type="checkbox" id="toggle-modules" checked />
+            <span class="slider"></span>
+          </label>
+          <span class="switch-label">Mostrar Módulos</span>
+        </div>
+        <div class="switch-container">
+          <label class="switch">
+            <input type="checkbox" id="toggle-settlements" checked />
+            <span class="slider"></span>
+          </label>
+          <span class="switch-label">Mostrar Campamentos</span>
+        </div>
       </div>
-      <div class="switch-container">
-        <label class="switch">
-          <input type="checkbox" id="toggle-modules" checked />
-          <span class="slider"></span>
-        </label>
-        <span class="switch-label">Mostrar Módulos</span>
-      </div>
-    </div>
     <script>
       mapboxgl.accessToken =
         "pk.eyJ1IjoiZXNtZXJhbGRhbSIsImEiOiJjbTc0cGF1Z2swZDBoMmpxeTJ3czg3cDEzIn0.cTCbN8IRIrxTelPv4lVKDQ";
@@ -40,6 +47,7 @@
       });
 
       map.on("load", function () {
+        // Cargar fuentes de datos
         map.addSource("geojson-source", {
           type: "geojson",
           data: "https://esmemag96.github.io/GeoJson-MVP/data.geojson",
@@ -50,7 +58,12 @@
           data: "https://esmemag96.github.io/GeoJson-MVP/modules.geojson",
         });
 
-        // Capa de puntos mejorada
+        map.addSource("settlements", {
+          type: "geojson",
+          data: "https://esmemag96.github.io/GeoJson-MVP/settlements.geojson",
+        });
+
+        // Capa de predicciones
         map.addLayer({
           id: "circle-layer",
           type: "circle",
@@ -59,22 +72,17 @@
             "circle-color": [
               "match",
               ["get", "risk_level"],
-              "Alto",
-              "#FF5733",
-              "Medio",
-              "#FFC300",
-              "Bajo",
-              "#DAF7A6",
+              "Alto", "#FF5733",
+              "Medio", "#FFC300",
+              "Bajo", "#DAF7A6",
               "#AAAAAA",
             ],
             "circle-radius": [
               "interpolate",
               ["linear"],
               ["get", "estimated_migrants"],
-              0,
-              5,
-              5000,
-              20,
+              0, 5,
+              5000, 20,
             ],
             "circle-opacity": 0.8,
             "circle-stroke-width": 1,
@@ -82,36 +90,23 @@
           },
         });
 
-        // Pop-up para la capa de puntos
+        // Pop-up para la capa de predicciones
         map.on("click", "circle-layer", function (e) {
-          const coordinates = e.features[0].geometry.coordinates.slice();
           const properties = e.features[0].properties;
-
-          const description = `
-      <strong>Ciudad:</strong> ${properties.city}<br>
-      <strong>País:</strong> ${properties.country}<br>
-      <strong>Nivel de riesgo:</strong> ${properties.risk_level}<br>
-      <strong>Descripción:</strong> ${properties.event_description}<br>
-      <strong>Migrantes estimados:</strong> ${properties.estimated_migrants}<br>
-      <strong>Módulos necesarios:</strong> ${properties.modules_needed}<br>
-      <strong>Ruta logística:</strong> ${properties.logistics_route}
-    `;
-
           new mapboxgl.Popup()
-            .setLngLat(coordinates)
-            .setHTML(description)
+            .setLngLat(e.lngLat)
+            .setHTML(`
+              <h3>${properties.city}, ${properties.country}</h3>
+              <p><strong>Nivel de riesgo:</strong> ${properties.risk_level}</p>
+              <p><strong>Descripción:</strong> ${properties.event_description}</p>
+              <p><strong>Migrantes estimados:</strong> ${properties.estimated_migrants}</p>
+              <p><strong>Módulos necesarios:</strong> ${properties.modules_needed}</p>
+              <p><strong>Ruta logística:</strong> ${properties.logistics_route}</p>
+            `)
             .addTo(map);
         });
 
-        map.on("mouseenter", "circle-layer", function () {
-          map.getCanvas().style.cursor = "pointer";
-        });
-
-        map.on("mouseleave", "circle-layer", function () {
-          map.getCanvas().style.cursor = "";
-        });
-
-        // Añadir la capa para los módulos
+        // Capa de módulos
         map.addLayer({
           id: "modules-layer",
           type: "circle",
@@ -120,21 +115,14 @@
             "circle-color": [
               "match",
               ["get", "status"],
-              "In use",
-              "#1f78b4", // Azul
-              "Reserved",
-              "#33a02c", // Verde
-              "To be retired",
-              "#e31a1c", // Rojo
-              "Stock",
-              "#ff7f00", // Naranja
-              "Under manteinance",
-              "#6a3d9a", // Morado
-              "On the way",
-              "#b2df8a", // Turquesa
-              "On the way back",
-              "#fca1e7", // Rosa
-              "#bdbdbd", // Gris para el resto
+              "In use", "#1f78b4",
+              "Reserved", "#33a02c",
+              "To be retired", "#e31a1c",
+              "Stock", "#ff7f00",
+              "Under maintenance", "#6a3d9a",
+              "On the way", "#b2df8a",
+              "On the way back", "#fca1e7",
+              "#bdbdbd",
             ],
             "circle-radius": 6,
             "circle-opacity": 0.7,
@@ -146,35 +134,59 @@
           const properties = e.features[0].properties;
           new mapboxgl.Popup()
             .setLngLat(e.lngLat)
-            .setHTML(
-              `
-        <h3>Módulo ID: ${properties.id}</h3>
-        <p><strong>Status:</strong> ${properties.status}</p>
-        <p><strong>Capacity:</strong> ${properties.capacity}</p>
-        <p><strong>Camp:</strong> ${properties.camp || "N/A"}</p>
-        <p><strong>Last Maintenance:</strong> ${
-          properties.last_maintenance || "N/A"
-        }</p>
-      `
-            )
+            .setHTML(`
+              <h3>Módulo ID: ${properties.id}</h3>
+              <p><strong>Status:</strong> ${properties.status}</p>
+              <p><strong>Capacity:</strong> ${properties.capacity}</p>
+              <p><strong>Camp:</strong> ${properties.camp || "N/A"}</p>
+              <p><strong>Last Maintenance:</strong> ${properties.last_maintenance || "N/A"}</p>
+            `)
             .addTo(map);
         });
 
-        map.on("mouseenter", "modules-layer", () => {
-          map.getCanvas().style.cursor = "pointer";
+        // Capa de campamentos con iconos
+        map.loadImage('https://cdn-icons-png.flaticon.com/512/684/684908.png', function(error, image) {
+          if (error) throw error;
+          map.addImage('camp-icon', image);
+
+          map.addLayer({
+            id: "settlements-layer",
+            type: "symbol",
+            source: "settlements",
+            layout: {
+              "icon-image": "camp-icon",
+              "icon-size": 0.5,
+              "icon-allow-overlap": true,
+            },
+          });
         });
 
-        map.on("mouseleave", "modules-layer", () => {
-          map.getCanvas().style.cursor = "";
+        // Pop-up para los campamentos
+        map.on("click", "settlements-layer", (e) => {
+          const properties = e.features[0].properties;
+          new mapboxgl.Popup()
+            .setLngLat(e.lngLat)
+            .setHTML(`
+              <h3>Campamento: ${properties.name}</h3>
+              <p><strong>Clientes:</strong> ${properties.clients || "N/A"}</p>
+              <p><strong>Módulos asignados:</strong> ${properties.modules || "N/A"}</p>
+            `)
+            .addTo(map);
         });
-      });
-      document.getElementById('toggle-predictions').addEventListener('change', function (e) {
+
+        // Controles de visibilidad
+        document.getElementById('toggle-predictions').addEventListener('change', function (e) {
           map.setLayoutProperty('circle-layer', 'visibility', e.target.checked ? 'visible' : 'none');
         });
 
         document.getElementById('toggle-modules').addEventListener('change', function (e) {
           map.setLayoutProperty('modules-layer', 'visibility', e.target.checked ? 'visible' : 'none');
         });
+
+        document.getElementById('toggle-settlements').addEventListener('change', function (e) {
+          map.setLayoutProperty('settlements-layer', 'visibility', e.target.checked ? 'visible' : 'none');
+        });
+      });
     </script>
   </body>
 </html>

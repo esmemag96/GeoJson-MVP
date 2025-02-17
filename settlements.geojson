@@ -13,9 +13,9 @@
       "properties": {
         "id": 2,
         "settlement_name": "Lesvos",
-        "clients": "N/A",
-        "modules_count": "N/A",
-        "camp_name": "N/A"
+        "clients": "Desconocido",
+        "modules_count": "0",
+        "camp_name": "No asignado"
       }
     },
     {
@@ -30,9 +30,9 @@
       "properties": {
         "id": 3,
         "settlement_name": "Lampedussa",
-        "clients": "N/A",
-        "modules_count": "N/A",
-        "camp_name": "N/A"
+        "clients": "Desconocido",
+        "modules_count": "0",
+        "camp_name": "No asignado"
       }
     },
     {
@@ -47,9 +47,9 @@
       "properties": {
         "id": 1,
         "settlement_name": "El Hierro",
-        "clients": "N/A",
-        "modules_count": "N/A",
-        "camp_name": "N/A"
+        "clients": "Desconocido",
+        "modules_count": "0",
+        "camp_name": "No asignado"
       }
     },
     {
@@ -64,9 +64,9 @@
       "properties": {
         "id": 4,
         "settlement_name": "Ceuta",
-        "clients": "N/A",
-        "modules_count": "N/A",
-        "camp_name": "N/A"
+        "clients": "Desconocido",
+        "modules_count": "0",
+        "camp_name": "No asignado"
       }
     }
   ]

@@ -46,6 +46,26 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          34.3415,
+          51.7339
+        ]
+      },
+      "properties": {
+        "forecast_date": "2025-02-07",
+        "city": "Sumy",
+        "country": "Ukraine",
+        "risk_level": "Alto",
+        "event_description": "Conflicto armado con eventos de violencia remota y enfrentamientos armados en la regi\u00f3n de Sumy, Ucrania, incluyendo bombardeos con drones y artiller\u00eda, lo cual incrementa el riesgo de desplazamiento significativo de poblaci\u00f3n.",
+        "estimated_migrants": 2500,
+        "modules_needed": 85,
+        "logistics_route": "Ruta principal por carretera M02 desde Kiev a Sumy."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -99.1332,
           19.4326
         ]

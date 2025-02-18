@@ -13,9 +13,9 @@
       "properties": {
         "id": 2,
         "settlement_name": "Lesvos",
-        "clients": "N/A",
-        "modules_count": "N/A",
-        "camp_name": "N/A"
+        "clients": "Lesvos Solidarity",
+        "modules_count": 23,
+        "camp_name": "Lesvos | Lesvos Solidarity"
       }
     },
     {
@@ -30,9 +30,9 @@
       "properties": {
         "id": 3,
         "settlement_name": "Lampedussa",
-        "clients": "N/A",
-        "modules_count": "N/A",
-        "camp_name": "N/A"
+        "clients": "Maldusa",
+        "modules_count": 22,
+        "camp_name": "Lampedussa | Maldusa"
       }
     },
     {
@@ -47,9 +47,9 @@
       "properties": {
         "id": 1,
         "settlement_name": "El Hierro",
-        "clients": "N/A",
-        "modules_count": "N/A",
-        "camp_name": "N/A"
+        "clients": "Cruz Roja Española",
+        "modules_count": 24,
+        "camp_name": "El Hierro | Cruz Roja Española"
       }
     },
     {
@@ -64,9 +64,9 @@
       "properties": {
         "id": 4,
         "settlement_name": "Ceuta",
-        "clients": "N/A",
-        "modules_count": "N/A",
-        "camp_name": "N/A"
+        "clients": "Ciudad Autónoma de Ceuta",
+        "modules_count": 19,
+        "camp_name": "Ceuta | Ciudad Autónoma de Ceuta"
       }
     }
   ]

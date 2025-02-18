@@ -3,7 +3,7 @@ import json
 import os
 
 # Configuración de Airtable
-AIRTABLE_API_KEY = os.getenv("AIRTABLE_API_KEY")
+AIRTABLE_API_KEY = "patXpVPYQGXgUF4XX.60806f4fec71b6d628d817b53f87b92ff272b4fe9ad4c6a2133c9ce0a19c257f"
 if AIRTABLE_API_KEY:
     print("API Key encontrada.")
 else:
@@ -44,14 +44,13 @@ camps_data = fetch_airtable_data(API_URL_CAMPS)
 camps_dict = {}
 for camp in camps_data:
     fields = camp["fields"]
-    camp_id = str(fields.get("ID", "")).strip()  # Convertimos el ID en string limpio
+    camp_id = camp["id"]  # Usamos el ID interno de Airtable
 
     camps_dict[camp_id] = {
-        "camp_name": fields.get("Name", "Desconocido"),
-        "clients": fields.get("Client Name", "Sin clientes"),
-        "modules_count": fields.get("Number of Modules", "0"),
+        "camp_name": fields.get("Name", "N/A"),
+        "clients": fields.get("Client Name", "N/A"),  # Lista de clientes
+        "modules_count": fields.get("Number of Modules", 0),  # Contador de módulos
     }
-
 # Crear el GeoJSON
 geojson = {
     "type": "FeatureCollection",
@@ -67,28 +66,19 @@ for record in settlements_data:
             longitude = float(fields["Longitude"])
             latitude = float(fields["Latitude"])
         except ValueError:
-            print(f"Error en coordenadas para {fields.get('Name', 'N/A')}: {fields['Latitude']}, {fields['Longitude']}")
+            print(f"⚠️ Error en coordenadas para {fields.get('Name', 'N/A')}: {fields['Latitude']}, {fields['Longitude']}")
             continue
 
-        # Obtener la lista de campamentos asociados
+        # Obtener los campamentos asociados (puede ser una lista)
         camp_ids = fields.get("Camps", [])
-        if not isinstance(camp_ids, list):
-            camp_ids = [str(camp_ids)]  # Convertir a lista si es un solo valor
-
-        camp_names = []
-        clients = []
-        modules_counts = []
-
+        
+        # Buscar el primer campamento que coincida en camps_dict
+        camp_info = {"camp_name": "No asignado", "clients": ["Desconocido"], "modules_count": 0}
         for camp_id in camp_ids:
-            camp_id_str = str(camp_id).strip()  # Asegurar que coincida con los IDs en camps_dict
-            camp_info = camps_dict.get(camp_id_str, None)
+            if camp_id in camps_dict:
+                camp_info = camps_dict[camp_id]
+                break  # Usamos el primer match
 
-            if camp_info:
-                camp_names.append(camp_info.get("camp_name", "No asignado"))
-                clients.append(str(camp_info.get("clients", "Desconocido")))
-                modules_counts.append(str(camp_info.get("modules_count", "0")))
-
-        # Convertir listas en strings separados por coma
         feature = {
             "type": "Feature",
             "geometry": {
@@ -98,9 +88,9 @@ for record in settlements_data:
             "properties": {
                 "id": fields.get("ID", "N/A"),
                 "settlement_name": fields.get("Name", "N/A"),
-                "clients": ", ".join(clients) if clients else "N/A",
-                "modules_count": ", ".join(modules_counts) if modules_counts else "N/A",
-                "camp_name": ", ".join(camp_names) if camp_names else "N/A",
+                "clients": ", ".join(camp_info["clients"]),
+                "modules_count": camp_info["modules_count"],
+                "camp_name": camp_info["camp_name"],
             }
         }
         geojson["features"].append(feature)

@@ -42,8 +42,10 @@
       const map = new mapboxgl.Map({
         container: "map",
         style: "mapbox://styles/mapbox/light-v10",
-        center: [-72.2119, 14.6311],
-        zoom: 2,
+        center: [-4.0, 35.0],
+        zoom: 4.5,
+        bearing: 0,
+        pitch: 0,
       });
 
       map.on("load", function () {
@@ -56,6 +58,9 @@
         map.addSource("modules", {
           type: "geojson",
           data: "https://esmemag96.github.io/GeoJson-MVP/modules.geojson",
+          cluster: true, // Activar clustering
+          clusterMaxZoom: 14, // Zoom máximo antes de separarse
+          clusterRadius: 50,
         });
 
         map.addSource("settlements", {
@@ -89,8 +94,8 @@
               5000,
               20,
             ],
-            "circle-opacity": 0.8,
-            "circle-stroke-width": 1,
+            "circle-opacity": 0.7,
+            "circle-stroke-width": 2, // Aumenta el grosor del borde
             "circle-stroke-color": "#000",
           },
         });
@@ -113,11 +118,50 @@
             .addTo(map);
         });
 
-        // Capa de módulos
+        // Capa de clústeres
         map.addLayer({
+          id: "clusters",
+          type: "circle",
+          source: "modules",
+          filter: ["has", "point_count"], // Solo se aplica a clústeres
+          paint: {
+            "circle-color": "#ffd759",
+            "circle-radius": [
+              "step",
+              ["get", "point_count"],
+              15,
+              10,
+              20,
+              50,
+              30,
+            ],
+            "circle-opacity": 0.8,
+          },
+        });
+
+        // Número dentro del clúster
+        map.addLayer({
+          id: "cluster-count",
+          type: "symbol",
+          source: "modules",
+          filter: ["has", "point_count"],
+          layout: {
+            "text-field": "{point_count_abbreviated}",
+            "text-size": 12,
+            "text-font": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            "text-allow-overlap": true,
+          },
+          paint: {
+            "text-color": "#fff",
+          },
+        });
+
+     // Capa de puntos individuales (cuando no están agrupados)
+     map.addLayer({
           id: "modules-layer",
           type: "circle",
           source: "modules",
+          filter: ["!", ["has", "point_count"]], // Solo módulos individuales
           paint: {
             "circle-color": [
               "match",
@@ -139,25 +183,44 @@
               "#bdbdbd",
             ],
             "circle-radius": 6,
-            "circle-opacity": 0.7,
+            "circle-opacity": 0.8,
+            "circle-stroke-width": 1,
+            "circle-stroke-color": "#000",
           },
         });
 
-        // Pop-up para los módulos
+        // Evento para expandir clúster al hacer clic
+        map.on("click", "clusters", function (e) {
+          const features = map.queryRenderedFeatures(e.point, {
+            layers: ["clusters"],
+          });
+          const clusterId = features[0].properties.cluster_id;
+          map
+            .getSource("modules")
+            .getClusterExpansionZoom(clusterId, function (err, zoom) {
+              if (err) return;
+              map.easeTo({
+                center: features[0].geometry.coordinates,
+                zoom: zoom,
+              });
+            });
+        });
+
+        // **Pop-up para módulos individuales**
         map.on("click", "modules-layer", (e) => {
           const properties = e.features[0].properties;
           new mapboxgl.Popup()
             .setLngLat(e.lngLat)
             .setHTML(
               `
-              <h3>Módulo ID: ${properties.id}</h3>
-              <p><strong>Status:</strong> ${properties.status}</p>
-              <p><strong>Capacity:</strong> ${properties.capacity}</p>
-              <p><strong>Camp:</strong> ${properties.camp || "N/A"}</p>
-              <p><strong>Last Maintenance:</strong> ${
-                properties.last_maintenance || "N/A"
-              }</p>
-            `
+        <h3>Módulo ID: ${properties.id}</h3>
+        <p><strong>Status:</strong> ${properties.status}</p>
+        <p><strong>Capacity:</strong> ${properties.capacity}</p>
+        <p><strong>Camp:</strong> ${properties.camp || "N/A"}</p>
+        <p><strong>Last Maintenance:</strong> ${
+          properties.last_maintenance || "N/A"
+        }</p>
+      `
             )
             .addTo(map);
         });
@@ -169,26 +232,24 @@
             if (error) throw error;
             map.addImage("camp-icon", image);
 
-            map.addLayer({
-              id: "settlements-layer",
-              type: "circle",
-              source: "settlements",
-              paint: {
-                "circle-color": "#FF5733", // Color de los campamentos
-                "circle-radius": [
-                  "interpolate",
-                  ["linear"],
-                  ["get", "modules_count"], // Basado en el número de módulos en cada campamento
-                  0,
-                  5, // Si tiene 0 módulos, tamaño mínimo
-                  30,
-                  20, // Si tiene 30 o más módulos, tamaño máximo
-                ],
-                "circle-opacity": 0.8,
-                "circle-stroke-width": 1,
-                "circle-stroke-color": "#000",
-              },
-            });
+            map.loadImage(
+              "https://cdn-icons-png.flaticon.com/512/684/684908.png",
+              function (error, image) {
+                if (error) throw error;
+                map.addImage("camp-icon", image);
+
+                map.addLayer({
+                  id: "settlements-layer",
+                  type: "symbol",
+                  source: "settlements",
+                  layout: {
+                    "icon-image": "camp-icon",
+                    "icon-size": 0.08, // Ajusta el tamaño del ícono
+                    "icon-allow-overlap": true, // Evita que se oculten cuando están juntos
+                  },
+                });
+              }
+            );
           }
         );
 
@@ -214,6 +275,22 @@
         map.on("mouseleave", "settlements-layer", () => {
           map.getCanvas().style.cursor = "";
         });
+        map.on("mouseenter", "modules-layer", () => {
+          map.getCanvas().style.cursor = "pointer";
+        });
+
+        map.on("mouseleave", "modules-layer", () => {
+          map.getCanvas().style.cursor = "";
+        });
+
+        // Cambia el cursor al pasar sobre un clúster
+        map.on("mouseenter", "clusters", () => {
+          map.getCanvas().style.cursor = "pointer";
+        });
+
+        map.on("mouseleave", "clusters", () => {
+          map.getCanvas().style.cursor = "";
+        });
         // Controles de visibilidad
         document
           .getElementById("toggle-predictions")
@@ -230,6 +307,16 @@
           .addEventListener("change", function (e) {
             map.setLayoutProperty(
               "modules-layer",
+              "visibility",
+              e.target.checked ? "visible" : "none"
+            );
+            map.setLayoutProperty(
+              "clusters",
+              "visibility",
+              e.target.checked ? "visible" : "none"
+            );
+            map.setLayoutProperty(
+              "cluster-count",
               "visibility",
               e.target.checked ? "visible" : "none"
             );

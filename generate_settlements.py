@@ -3,7 +3,7 @@ import json
 import os
 
 # Configuración de Airtable
-AIRTABLE_API_KEY = "patXpVPYQGXgUF4XX.60806f4fec71b6d628d817b53f87b92ff272b4fe9ad4c6a2133c9ce0a19c257f"
+AIRTABLE_API_KEY = os.getenv("AIRTABLE_API_KEY")
 if AIRTABLE_API_KEY:
     print("API Key encontrada.")
 else:

@@ -66,6 +66,26 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -3.7038,
+          40.4168
+        ]
+      },
+      "properties": {
+        "forecast_date": "2025-03-01",
+        "city": "Madrid",
+        "country": "Spain",
+        "risk_level": "Bajo",
+        "event_description": "El establecimiento de una Asociaci\u00f3n Estrat\u00e9gica entre Espa\u00f1a y Egipto, junto con la firma de memorandos de entendimiento sobre migraci\u00f3n circular y mejora de infraestructuras, sugiere un fortalecimiento de la relaci\u00f3n bilateral. Se espera que esto facilite programaciones migratorias controladas y beneficiosas para ambos pa\u00edses, con un aumento en el intercambio laboral.",
+        "estimated_migrants": 200,
+        "modules_needed": 0,
+        "logistics_route": "Requiere establecimiento de corredores administrativos y log\u00edsticos entre Espa\u00f1a y Egipto."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -99.1332,
           19.4326
         ]

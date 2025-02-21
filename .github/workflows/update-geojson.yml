@@ -52,6 +52,6 @@ jobs:
         run: |
           git config user.name "GitHub Bot"
           git config user.email "bot@github.com"
-          git add data.geojson modules.geojson settlements.geojson
+          git add data.geojson modules.geojson settlements.geojson filtered_modules.geojson
           git diff --cached --exit-code || git commit -m "Auto-update GeoJSON files from Airtable"
           git push origin main

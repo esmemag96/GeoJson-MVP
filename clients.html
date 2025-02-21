@@ -23,33 +23,53 @@
   <body>
     <div id="map"></div>
     <script>
-      mapboxgl.accessToken = "pk.eyJ1IjoiZXNtZXJhbGRhbSIsImEiOiJjbTc0cGF1Z2swZDBoMmpxeTJ3czg3cDEzIn0.cTCbN8IRIrxTelPv4lVKDQ";
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoiZXNtZXJhbGRhbSIsImEiOiJjbTc0cGF1Z2swZDBoMmpxeTJ3czg3cDEzIn0.cTCbN8IRIrxTelPv4lVKDQ";
       const map = new mapboxgl.Map({
         container: "map",
         style: "mapbox://styles/mapbox/light-v10",
-        center: [-10, 40], // Coordenadas iniciales
-        zoom: 4,
+        center: [-17.997, 27.637],
+        zoom: 13,
+        bearing: 0,
+        pitch: 0,
       });
+      function jitterCoordinates(lng, lat, intensity = 0.0001) {
+        return [
+          lng + (Math.random() - 0.5) * intensity,
+          lat + (Math.random() - 0.5) * intensity,
+        ];
+      }
 
       map.on("load", function () {
-        // Cargar los módulos asignados
-        map.addSource("modules-client", {
-          type: "geojson",
-          data: "https://esmemag96.github.io/GeoJson-MVP/filtered_modules.geojson",
-        });
+        fetch(
+          "https://esmemag96.github.io/GeoJson-MVP/filtered_modules.geojson"
+        )
+          .then((response) => response.json())
+          .then((data) => {
+            // Aplicar el desplazamiento aleatorio a los puntos duplicados
+            data.features.forEach((feature) => {
+              let [lng, lat] = feature.geometry.coordinates;
+              feature.geometry.coordinates = jitterCoordinates(lng, lat);
+            });
 
-        map.addLayer({
-          id: "modules-layer",
-          type: "circle",
-          source: "modules-client",
-          paint: {
-            "circle-color": "#1f78b4",
-            "circle-radius": 8,
-            "circle-opacity": 0.8,
-            "circle-stroke-width": 1,
-            "circle-stroke-color": "#000",
-          },
-        });
+            map.addSource("modules-client", {
+              type: "geojson",
+              data: data,
+            });
+
+            map.addLayer({
+              id: "modules-layer",
+              type: "circle",
+              source: "modules-client",
+              paint: {
+                "circle-color": "#fed759",
+                "circle-radius": 8,
+                "circle-opacity": 0.8,
+                "circle-stroke-width": 1,
+                "circle-stroke-color": "#000",
+              },
+            });
+          });
 
         // Pop-up para mostrar detalles del módulo y cliente
         map.on("click", "modules-layer", (e) => {
@@ -65,8 +85,6 @@
               <hr>
               <h4>Cliente</h4>
               <p><strong>Nombre:</strong> ${properties.client_name}</p>
-              <p><strong>País:</strong> ${properties.client_country}</p>
-              <p><strong>Organización:</strong> ${properties.client_organization}</p>
               <p><strong>Último mantenimiento:</strong> ${
                 properties.last_maintenance || "N/A"
               }</p>

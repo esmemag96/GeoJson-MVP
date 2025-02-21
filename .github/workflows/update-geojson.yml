@@ -42,6 +42,12 @@ jobs:
         run: |
           python generate_settlements.py
 
+      - name: Fetch Modules and Clients Data from Airtable and Generate filtered_modules.geojson
+        env:
+          AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
+        run: |
+          python client_modules.py
+
       - name: Commit and Push Changes (if needed)
         run: |
           git config user.name "GitHub Bot"

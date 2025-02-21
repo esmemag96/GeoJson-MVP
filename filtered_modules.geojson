@@ -1,0 +1,463 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.98154735885726,
+          27.650013678651707
+        ]
+      },
+      "properties": {
+        "id": 440,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 22,
+        "camp": [
+          "El Hierro"
+        ],
+        "installation_date": "2024-06-12",
+        "last_maintenance": "N/A",
+        "client_name": "Cruz Roja Espa\u00f1ola",
+        "client_country": "N/A",
+        "client_organization": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.7975000536246865,
+          41.65864586997154
+        ]
+      },
+      "properties": {
+        "id": 367,
+        "type": [
+          "Standard"
+        ],
+        "status": "Reserved",
+        "capacity": 13,
+        "camp": [
+          "El Hierro"
+        ],
+        "installation_date": "N/A",
+        "last_maintenance": "N/A",
+        "client_name": "Cruz Roja Espa\u00f1ola",
+        "client_country": "N/A",
+        "client_organization": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.98154735885726,
+          27.650013678651707
+        ]
+      },
+      "properties": {
+        "id": 435,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 9,
+        "camp": [
+          "El Hierro"
+        ],
+        "installation_date": "2023-09-12",
+        "last_maintenance": "N/A",
+        "client_name": "Cruz Roja Espa\u00f1ola",
+        "client_country": "N/A",
+        "client_organization": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2602067834518613,
+          40.99170701442654
+        ]
+      },
+      "properties": {
+        "id": 431,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way back",
+        "capacity": 12,
+        "camp": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A",
+        "client_name": "Cruz Roja Espa\u00f1ola",
+        "client_country": "N/A",
+        "client_organization": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.7975000536246865,
+          41.65864586997154
+        ]
+      },
+      "properties": {
+        "id": 344,
+        "type": [
+          "Standard"
+        ],
+        "status": "Reserved",
+        "capacity": 11,
+        "camp": [
+          "El Hierro"
+        ],
+        "installation_date": "N/A",
+        "last_maintenance": "N/A",
+        "client_name": "Cruz Roja Espa\u00f1ola",
+        "client_country": "N/A",
+        "client_organization": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2602067834518613,
+          40.99170701442654
+        ]
+      },
+      "properties": {
+        "id": 411,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way back",
+        "capacity": 11,
+        "camp": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A",
+        "client_name": "Cruz Roja Espa\u00f1ola",
+        "client_country": "N/A",
+        "client_organization": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.98154735885726,
+          27.650013678651707
+        ]
+      },
+      "properties": {
+        "id": 380,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 22,
+        "camp": [
+          "El Hierro"
+        ],
+        "installation_date": "N/A",
+        "last_maintenance": "N/A",
+        "client_name": "Cruz Roja Espa\u00f1ola",
+        "client_country": "N/A",
+        "client_organization": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.98154735885726,
+          27.650013678651707
+        ]
+      },
+      "properties": {
+        "id": 455,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 9,
+        "camp": [
+          "El Hierro"
+        ],
+        "installation_date": "N/A",
+        "last_maintenance": "N/A",
+        "client_name": "Cruz Roja Espa\u00f1ola",
+        "client_country": "N/A",
+        "client_organization": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.98154735885726,
+          27.650013678651707
+        ]
+      },
+      "properties": {
+        "id": 360,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 19,
+        "camp": [
+          "El Hierro"
+        ],
+        "installation_date": "2024-06-12",
+        "last_maintenance": "N/A",
+        "client_name": "Cruz Roja Espa\u00f1ola",
+        "client_country": "N/A",
+        "client_organization": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.7975000536246865,
+          41.65864586997154
+        ]
+      },
+      "properties": {
+        "id": 447,
+        "type": [
+          "Standard"
+        ],
+        "status": "Reserved",
+        "capacity": 13,
+        "camp": [
+          "El Hierro"
+        ],
+        "installation_date": "N/A",
+        "last_maintenance": "N/A",
+        "client_name": "Cruz Roja Espa\u00f1ola",
+        "client_country": "N/A",
+        "client_organization": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.98154735885726,
+          27.650013678651707
+        ]
+      },
+      "properties": {
+        "id": 420,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 24,
+        "camp": [
+          "El Hierro"
+        ],
+        "installation_date": "2024-06-12",
+        "last_maintenance": "N/A",
+        "client_name": "Cruz Roja Espa\u00f1ola",
+        "client_country": "N/A",
+        "client_organization": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.98154735885726,
+          27.650013678651707
+        ]
+      },
+      "properties": {
+        "id": 400,
+        "type": [
+          "Standard"
+        ],
+        "status": "To be retired",
+        "capacity": 22,
+        "camp": [
+          "El Hierro"
+        ],
+        "installation_date": "2024-06-12",
+        "last_maintenance": "N/A",
+        "client_name": "Cruz Roja Espa\u00f1ola",
+        "client_country": "N/A",
+        "client_organization": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2602067834518613,
+          40.99170701442654
+        ]
+      },
+      "properties": {
+        "id": 391,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way back",
+        "capacity": 12,
+        "camp": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A",
+        "client_name": "Cruz Roja Espa\u00f1ola",
+        "client_country": "N/A",
+        "client_organization": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2602067834518613,
+          40.99170701442654
+        ]
+      },
+      "properties": {
+        "id": 451,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way back",
+        "capacity": 12,
+        "camp": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A",
+        "client_name": "Cruz Roja Espa\u00f1ola",
+        "client_country": "N/A",
+        "client_organization": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2602067834518613,
+          40.99170701442654
+        ]
+      },
+      "properties": {
+        "id": 341,
+        "type": [
+          "Standard"
+        ],
+        "status": "On the way back",
+        "capacity": 7,
+        "camp": "N/A",
+        "installation_date": "N/A",
+        "last_maintenance": "N/A",
+        "client_name": "Cruz Roja Espa\u00f1ola",
+        "client_country": "N/A",
+        "client_organization": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.98154735885726,
+          27.650013678651707
+        ]
+      },
+      "properties": {
+        "id": 415,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 10,
+        "camp": [
+          "El Hierro"
+        ],
+        "installation_date": "2023-09-12",
+        "last_maintenance": "N/A",
+        "client_name": "Cruz Roja Espa\u00f1ola",
+        "client_country": "N/A",
+        "client_organization": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.98154735885726,
+          27.650013678651707
+        ]
+      },
+      "properties": {
+        "id": 395,
+        "type": [
+          "Standard"
+        ],
+        "status": "In use",
+        "capacity": 10,
+        "camp": [
+          "El Hierro"
+        ],
+        "installation_date": "2023-09-12",
+        "last_maintenance": "N/A",
+        "client_name": "Cruz Roja Espa\u00f1ola",
+        "client_country": "N/A",
+        "client_organization": "N/A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.98154735885726,
+          27.650013678651707
+        ]
+      },
+      "properties": {
+        "id": 460,
+        "type": [
+          "Standard"
+        ],
+        "status": "To be retired",
+        "capacity": 22,
+        "camp": [
+          "El Hierro"
+        ],
+        "installation_date": "2023-09-12",
+        "last_maintenance": "N/A",
+        "client_name": "Cruz Roja Espa\u00f1ola",
+        "client_country": "N/A",
+        "client_organization": "N/A"
+      }
+    }
+  ]
+}

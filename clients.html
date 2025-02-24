@@ -80,13 +80,14 @@
               `
               <h3>Módulo ID: ${properties.id}</h3>
               <p><strong>Status:</strong> ${properties.status}</p>
-              <p><strong>Tipo:</strong> ${properties.type}</p>
               <p><strong>Capacidad:</strong> ${properties.capacity}</p>
+              <p><strong>Ocupación:</strong> ${properties.ocuppancy}</p>
+              <p><strong>Hombres:</strong> ${properties.men}</p>
+              <p><strong>Mujeres:</strong> ${properties.women}</p>
+              <p><strong>Niños:</strong> ${properties.children}</p>
               <hr>
-              <h4>Cliente</h4>
-              <p><strong>Nombre:</strong> ${properties.client_name}</p>
-              <p><strong>Último mantenimiento:</strong> ${
-                properties.last_maintenance || "N/A"
+              <p><strong>Próximo mantenimiento:</strong> ${
+                properties.next_maintenance || "N/A"
               }</p>
             `
             )

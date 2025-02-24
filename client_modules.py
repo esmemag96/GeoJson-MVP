@@ -3,7 +3,6 @@ import json
 import os
 
 # Configuración de Airtable
-## AIRTABLE_API_KEY = os.getenv("AIRTABLE_API_KEY")
 AIRTABLE_API_KEY = os.getenv("AIRTABLE_API_KEY")
 if AIRTABLE_API_KEY:
     print("API Key encontrada.")
@@ -89,9 +88,14 @@ for record in modules_data:
                 "type": fields.get("Type", "N/A"),
                 "status": fields.get("Status", "N/A"),
                 "capacity": fields.get("Capacity", "N/A"),
+                "ocuppancy": fields.get("Ocuppancy", "N/A"),
+                "men": fields.get("Men", "N/A"),
+                "women": fields.get("Women", "N/A"),
+                "children": fields.get("Children", "N/A"),
                 "camp": fields.get("Name (from Settlements) (from Camp)", "N/A"),
                 "installation_date": fields.get("Installation Date", "N/A"),
                 "last_maintenance": fields.get("Last Maintenance Date", "N/A"),
+                "next_maintenance": fields.get("Next Maintenance Date", "N/A"),
                 "client_name": client_info["client_name"],
                 "client_country": client_info["country"],
                 "client_organization": client_info["organization"],

@@ -42,8 +42,8 @@
       const map = new mapboxgl.Map({
         container: "map",
         style: "mapbox://styles/mapbox/light-v10",
-        center: [-4.0, 35.0],
-        zoom: 4.5,
+        center: [-0.7975000536246865, 41.65864586997154],
+        zoom: 13,
         bearing: 0,
         pitch: 0,
       });
@@ -125,7 +125,7 @@
           source: "modules",
           filter: ["has", "point_count"], // Solo se aplica a clústeres
           paint: {
-            "circle-color": "#ffd759",
+            "circle-color": "#c89ee8",
             "circle-radius": [
               "step",
               ["get", "point_count"],

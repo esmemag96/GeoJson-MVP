@@ -16,7 +16,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 22,
+        "capacity": 6,
         "camp": [
           "El Hierro"
         ],
@@ -42,7 +42,7 @@
           "Standard"
         ],
         "status": "Reserved",
-        "capacity": 13,
+        "capacity": 10,
         "camp": [
           "El Hierro"
         ],
@@ -68,7 +68,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 9,
+        "capacity": 6,
         "camp": [
           "El Hierro"
         ],
@@ -94,7 +94,7 @@
           "Standard"
         ],
         "status": "On the way back",
-        "capacity": 12,
+        "capacity": 6,
         "camp": "N/A",
         "installation_date": "N/A",
         "last_maintenance": "N/A",
@@ -118,7 +118,7 @@
           "Standard"
         ],
         "status": "Reserved",
-        "capacity": 11,
+        "capacity": 6,
         "camp": [
           "El Hierro"
         ],
@@ -144,7 +144,7 @@
           "Standard"
         ],
         "status": "On the way back",
-        "capacity": 11,
+        "capacity": 10,
         "camp": "N/A",
         "installation_date": "N/A",
         "last_maintenance": "N/A",
@@ -168,7 +168,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 22,
+        "capacity": 10,
         "camp": [
           "El Hierro"
         ],
@@ -194,7 +194,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 9,
+        "capacity": 10,
         "camp": [
           "El Hierro"
         ],
@@ -220,7 +220,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 19,
+        "capacity": 6,
         "camp": [
           "El Hierro"
         ],
@@ -246,7 +246,7 @@
           "Standard"
         ],
         "status": "Reserved",
-        "capacity": 13,
+        "capacity": 10,
         "camp": [
           "El Hierro"
         ],
@@ -272,7 +272,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 24,
+        "capacity": 10,
         "camp": [
           "El Hierro"
         ],
@@ -298,7 +298,7 @@
           "Standard"
         ],
         "status": "To be retired",
-        "capacity": 22,
+        "capacity": 6,
         "camp": [
           "El Hierro"
         ],
@@ -324,7 +324,7 @@
           "Standard"
         ],
         "status": "On the way back",
-        "capacity": 12,
+        "capacity": 6,
         "camp": "N/A",
         "installation_date": "N/A",
         "last_maintenance": "N/A",
@@ -348,7 +348,7 @@
           "Standard"
         ],
         "status": "On the way back",
-        "capacity": 12,
+        "capacity": 10,
         "camp": "N/A",
         "installation_date": "N/A",
         "last_maintenance": "N/A",
@@ -372,7 +372,7 @@
           "Standard"
         ],
         "status": "On the way back",
-        "capacity": 7,
+        "capacity": 10,
         "camp": "N/A",
         "installation_date": "N/A",
         "last_maintenance": "N/A",
@@ -422,7 +422,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 10,
+        "capacity": 6,
         "camp": [
           "El Hierro"
         ],
@@ -448,7 +448,7 @@
           "Standard"
         ],
         "status": "To be retired",
-        "capacity": 22,
+        "capacity": 10,
         "camp": [
           "El Hierro"
         ],

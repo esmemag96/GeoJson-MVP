@@ -16,7 +16,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 22,
+        "capacity": 6,
         "camp": [
           "El Hierro"
         ],
@@ -40,7 +40,7 @@
           "Standard"
         ],
         "status": "Stock",
-        "capacity": 17,
+        "capacity": 6,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -62,7 +62,7 @@
           "Standard"
         ],
         "status": "Reserved",
-        "capacity": 21,
+        "capacity": 10,
         "camp": [
           "Lesvos"
         ],
@@ -86,7 +86,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 25,
+        "capacity": 10,
         "camp": [
           "Lesvos"
         ],
@@ -110,7 +110,7 @@
           "Standard"
         ],
         "status": "Stock",
-        "capacity": 17,
+        "capacity": 10,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -132,7 +132,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 17,
+        "capacity": 10,
         "camp": [
           "Ceuta"
         ],
@@ -156,7 +156,7 @@
           "Standard"
         ],
         "status": "Under manteinance",
-        "capacity": 14,
+        "capacity": 6,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -178,7 +178,7 @@
           "Standard"
         ],
         "status": "Reserved",
-        "capacity": 13,
+        "capacity": 10,
         "camp": [
           "El Hierro"
         ],
@@ -202,7 +202,7 @@
           "Standard"
         ],
         "status": "Under manteinance",
-        "capacity": 16,
+        "capacity": 10,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -224,7 +224,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 16,
+        "capacity": 6,
         "camp": [
           "Lesvos"
         ],
@@ -248,7 +248,7 @@
           "Standard"
         ],
         "status": "Stock",
-        "capacity": 22,
+        "capacity": 10,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -270,7 +270,7 @@
           "Standard"
         ],
         "status": "Stock",
-        "capacity": 21,
+        "capacity": 10,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -292,7 +292,7 @@
           "Standard"
         ],
         "status": "Stock",
-        "capacity": 24,
+        "capacity": 10,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -314,7 +314,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 10,
+        "capacity": 6,
         "camp": [
           "Ceuta"
         ],
@@ -362,7 +362,7 @@
           "Standard"
         ],
         "status": "Under manteinance",
-        "capacity": 12,
+        "capacity": 10,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -384,7 +384,7 @@
           "Standard"
         ],
         "status": "Reserved",
-        "capacity": 10,
+        "capacity": 6,
         "camp": [
           "Lampedussa"
         ],
@@ -408,7 +408,7 @@
           "Standard"
         ],
         "status": "On the way",
-        "capacity": 9,
+        "capacity": 6,
         "camp": [
           "El Hierro"
         ],
@@ -432,7 +432,7 @@
           "Standard"
         ],
         "status": "Stock",
-        "capacity": 21,
+        "capacity": 6,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -454,7 +454,7 @@
           "Standard"
         ],
         "status": "Reserved",
-        "capacity": 21,
+        "capacity": 6,
         "camp": [
           "Lesvos"
         ],
@@ -478,7 +478,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 20,
+        "capacity": 6,
         "camp": [
           "Ceuta"
         ],
@@ -502,7 +502,7 @@
           "Standard"
         ],
         "status": "Reserved",
-        "capacity": 24,
+        "capacity": 10,
         "camp": [
           "Ceuta"
         ],
@@ -526,7 +526,7 @@
           "Standard"
         ],
         "status": "On the way back",
-        "capacity": 9,
+        "capacity": 10,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -548,7 +548,7 @@
           "Standard"
         ],
         "status": "Reserved",
-        "capacity": 11,
+        "capacity": 10,
         "camp": [
           "Lampedussa"
         ],
@@ -572,7 +572,7 @@
           "Standard"
         ],
         "status": "Under manteinance",
-        "capacity": 14,
+        "capacity": 10,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -594,7 +594,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 10,
+        "capacity": 6,
         "camp": [
           "Ceuta"
         ],
@@ -618,7 +618,7 @@
           "Standard"
         ],
         "status": "Reserved",
-        "capacity": 20,
+        "capacity": 10,
         "camp": [
           "Ceuta"
         ],
@@ -642,7 +642,7 @@
           "Standard"
         ],
         "status": "Under manteinance",
-        "capacity": 9,
+        "capacity": 6,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -664,7 +664,7 @@
           "Standard"
         ],
         "status": "Reserved",
-        "capacity": 21,
+        "capacity": 6,
         "camp": [
           "Lesvos"
         ],
@@ -688,7 +688,7 @@
           "Standard"
         ],
         "status": "To be retired",
-        "capacity": 25,
+        "capacity": 10,
         "camp": [
           "Ceuta"
         ],
@@ -712,7 +712,7 @@
           "Standard"
         ],
         "status": "Stock",
-        "capacity": 19,
+        "capacity": 6,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -782,7 +782,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 18,
+        "capacity": 10,
         "camp": [
           "Lampedussa"
         ],
@@ -806,7 +806,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 21,
+        "capacity": 10,
         "camp": [
           "Lesvos"
         ],
@@ -830,7 +830,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 9,
+        "capacity": 6,
         "camp": [
           "El Hierro"
         ],
@@ -876,7 +876,7 @@
           "Standard"
         ],
         "status": "Under manteinance",
-        "capacity": 20,
+        "capacity": 6,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -898,7 +898,7 @@
           "Standard"
         ],
         "status": "Under manteinance",
-        "capacity": 15,
+        "capacity": 10,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -920,7 +920,7 @@
           "Standard"
         ],
         "status": "On the way back",
-        "capacity": 12,
+        "capacity": 6,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -966,7 +966,7 @@
           "Standard"
         ],
         "status": "On the way",
-        "capacity": 9,
+        "capacity": 10,
         "camp": [
           "Ceuta"
         ],
@@ -990,7 +990,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 19,
+        "capacity": 6,
         "camp": [
           "Lesvos"
         ],
@@ -1038,7 +1038,7 @@
           "Standard"
         ],
         "status": "On the way back",
-        "capacity": 5,
+        "capacity": 6,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -1060,7 +1060,7 @@
           "Standard"
         ],
         "status": "Stock",
-        "capacity": 22,
+        "capacity": 6,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -1082,7 +1082,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 16,
+        "capacity": 10,
         "camp": [
           "Lampedussa"
         ],
@@ -1106,7 +1106,7 @@
           "Standard"
         ],
         "status": "On the way",
-        "capacity": 9,
+        "capacity": 10,
         "camp": [
           "El Hierro"
         ],
@@ -1130,7 +1130,7 @@
           "Standard"
         ],
         "status": "Reserved",
-        "capacity": 11,
+        "capacity": 6,
         "camp": [
           "El Hierro"
         ],
@@ -1154,7 +1154,7 @@
           "Standard"
         ],
         "status": "On the way back",
-        "capacity": 11,
+        "capacity": 10,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -1176,7 +1176,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 22,
+        "capacity": 10,
         "camp": [
           "El Hierro"
         ],
@@ -1200,7 +1200,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 20,
+        "capacity": 10,
         "camp": [
           "Lampedussa"
         ],
@@ -1224,7 +1224,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 24,
+        "capacity": 6,
         "camp": [
           "Lesvos"
         ],
@@ -1248,7 +1248,7 @@
           "Standard"
         ],
         "status": "To be retired",
-        "capacity": 25,
+        "capacity": 10,
         "camp": [
           "Lesvos"
         ],
@@ -1272,7 +1272,7 @@
           "Standard"
         ],
         "status": "Under manteinance",
-        "capacity": 16,
+        "capacity": 10,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -1294,7 +1294,7 @@
           "Standard"
         ],
         "status": "On the way back",
-        "capacity": 8,
+        "capacity": 10,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -1316,7 +1316,7 @@
           "Standard"
         ],
         "status": "Under manteinance",
-        "capacity": 14,
+        "capacity": 10,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -1338,7 +1338,7 @@
           "Standard"
         ],
         "status": "On the way",
-        "capacity": 7,
+        "capacity": 10,
         "camp": [
           "Lampedussa"
         ],
@@ -1362,7 +1362,7 @@
           "Standard"
         ],
         "status": "Under manteinance",
-        "capacity": 20,
+        "capacity": 6,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -1408,7 +1408,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 10,
+        "capacity": 6,
         "camp": [
           "Ceuta"
         ],
@@ -1454,7 +1454,7 @@
           "Standard"
         ],
         "status": "Reserved",
-        "capacity": 17,
+        "capacity": 6,
         "camp": [
           "Lesvos"
         ],
@@ -1502,7 +1502,7 @@
           "Standard"
         ],
         "status": "Reserved",
-        "capacity": 21,
+        "capacity": 10,
         "camp": [
           "Lesvos"
         ],
@@ -1526,7 +1526,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 15,
+        "capacity": 6,
         "camp": [
           "Ceuta"
         ],
@@ -1550,7 +1550,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 9,
+        "capacity": 10,
         "camp": [
           "El Hierro"
         ],
@@ -1574,7 +1574,7 @@
           "Standard"
         ],
         "status": "Under manteinance",
-        "capacity": 15,
+        "capacity": 6,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -1596,7 +1596,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 15,
+        "capacity": 10,
         "camp": [
           "Lesvos"
         ],
@@ -1620,7 +1620,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 14,
+        "capacity": 10,
         "camp": [
           "Ceuta"
         ],
@@ -1644,7 +1644,7 @@
           "Standard"
         ],
         "status": "To be retired",
-        "capacity": 25,
+        "capacity": 6,
         "camp": [
           "Lesvos"
         ],
@@ -1668,7 +1668,7 @@
           "Standard"
         ],
         "status": "On the way back",
-        "capacity": 9,
+        "capacity": 10,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -1690,7 +1690,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 19,
+        "capacity": 6,
         "camp": [
           "El Hierro"
         ],
@@ -1714,7 +1714,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 18,
+        "capacity": 6,
         "camp": [
           "Lesvos"
         ],
@@ -1738,7 +1738,7 @@
           "Standard"
         ],
         "status": "Reserved",
-        "capacity": 13,
+        "capacity": 10,
         "camp": [
           "El Hierro"
         ],
@@ -1762,7 +1762,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 24,
+        "capacity": 10,
         "camp": [
           "El Hierro"
         ],
@@ -1786,7 +1786,7 @@
           "Standard"
         ],
         "status": "Under manteinance",
-        "capacity": 14,
+        "capacity": 10,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -1808,7 +1808,7 @@
           "Standard"
         ],
         "status": "Stock",
-        "capacity": 18,
+        "capacity": 10,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -1830,7 +1830,7 @@
           "Standard"
         ],
         "status": "Reserved",
-        "capacity": 12,
+        "capacity": 10,
         "camp": [
           "Ceuta"
         ],
@@ -1854,7 +1854,7 @@
           "Standard"
         ],
         "status": "To be retired",
-        "capacity": 22,
+        "capacity": 6,
         "camp": [
           "El Hierro"
         ],
@@ -1878,7 +1878,7 @@
           "Standard"
         ],
         "status": "On the way back",
-        "capacity": 12,
+        "capacity": 6,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -1900,7 +1900,7 @@
           "Standard"
         ],
         "status": "On the way",
-        "capacity": 8,
+        "capacity": 6,
         "camp": [
           "Lampedussa"
         ],
@@ -1924,7 +1924,7 @@
           "Standard"
         ],
         "status": "On the way back",
-        "capacity": 9,
+        "capacity": 6,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -1946,7 +1946,7 @@
           "Standard"
         ],
         "status": "Stock",
-        "capacity": 14,
+        "capacity": 10,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -1968,7 +1968,7 @@
           "Standard"
         ],
         "status": "Reserved",
-        "capacity": 22,
+        "capacity": 6,
         "camp": [
           "Ceuta"
         ],
@@ -1992,7 +1992,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 6,
+        "capacity": 10,
         "camp": [
           "Lampedussa"
         ],
@@ -2016,7 +2016,7 @@
           "Standard"
         ],
         "status": "Stock",
-        "capacity": 22,
+        "capacity": 10,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -2038,7 +2038,7 @@
           "Standard"
         ],
         "status": "Stock",
-        "capacity": 14,
+        "capacity": 10,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -2060,7 +2060,7 @@
           "Standard"
         ],
         "status": "On the way back",
-        "capacity": 12,
+        "capacity": 10,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -2082,7 +2082,7 @@
           "Standard"
         ],
         "status": "Reserved",
-        "capacity": 22,
+        "capacity": 6,
         "camp": [
           "Ceuta"
         ],
@@ -2106,7 +2106,7 @@
           "Standard"
         ],
         "status": "Reserved",
-        "capacity": 22,
+        "capacity": 10,
         "camp": [
           "Ceuta"
         ],
@@ -2130,7 +2130,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 14,
+        "capacity": 10,
         "camp": [
           "Ceuta"
         ],
@@ -2154,7 +2154,7 @@
           "Standard"
         ],
         "status": "On the way back",
-        "capacity": 7,
+        "capacity": 10,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -2176,7 +2176,7 @@
           "Standard"
         ],
         "status": "Stock",
-        "capacity": 21,
+        "capacity": 6,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -2222,7 +2222,7 @@
           "Standard"
         ],
         "status": "Stock",
-        "capacity": 23,
+        "capacity": 6,
         "camp": "N/A",
         "client": "N/A",
         "installation_date": "N/A",
@@ -2244,7 +2244,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 10,
+        "capacity": 6,
         "camp": [
           "Ceuta"
         ],
@@ -2268,7 +2268,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 10,
+        "capacity": 6,
         "camp": [
           "El Hierro"
         ],
@@ -2292,7 +2292,7 @@
           "Standard"
         ],
         "status": "To be retired",
-        "capacity": 22,
+        "capacity": 10,
         "camp": [
           "El Hierro"
         ],
@@ -2316,7 +2316,7 @@
           "Standard"
         ],
         "status": "In use",
-        "capacity": 18,
+        "capacity": 10,
         "camp": [
           "Lesvos"
         ],

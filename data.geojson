@@ -6,6 +6,26 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          32.6178,
+          46.6558
+        ]
+      },
+      "properties": {
+        "forecast_date": "2025-05-20",
+        "city": "Kherson",
+        "country": "Ukraine",
+        "risk_level": "Alto",
+        "event_description": "La serie de ataques a\u00e9reos y de drones en m\u00faltiples ubicaciones de Ucrania, especialmente en Kherson, y el aumento de la violencia en los territorios afectados sugiere un riesgo elevado de desplazamiento de poblaci\u00f3n. La infraestructura da\u00f1ada, como estaciones de tren y veh\u00edculos, junto con ataques directos a civiles, incrementa la probabilidad de que surja un movimiento migratorio significativo.",
+        "estimated_migrants": 10000,
+        "modules_needed": 250,
+        "logistics_route": "Ruta principal por carretera M14 desde Odessa a Kherson."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           90.4125,
           23.8103
         ]
@@ -119,6 +139,26 @@
         "estimated_migrants": 3000,
         "modules_needed": 100,
         "logistics_route": "Ruta principal por carretera Panamericana Sur desde Lima hasta Ica."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.4,
+          -23.65
+        ]
+      },
+      "properties": {
+        "forecast_date": "2024-03-15",
+        "city": "Antofagasta",
+        "country": "Chile",
+        "risk_level": "Medio",
+        "event_description": "Un incremento en la actividad s\u00edsmica cerca de la costa de Antofagasta ha sido reportado. Seg\u00fan el USGS, hay una posibilidad moderada de un sismo mayor en los pr\u00f3ximos meses que podr\u00eda afectar infraestructuras y desencadenar desplazamientos internos.",
+        "estimated_migrants": 2000,
+        "modules_needed": 67,
+        "logistics_route": "Ruta principal por carretera 5 Norte desde Santiago a Antofagasta."
       }
     },
     {

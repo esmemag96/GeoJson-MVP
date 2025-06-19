@@ -6,6 +6,26 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          131.1045520412834,
+          33.01188756779366
+        ]
+      },
+      "properties": {
+        "forecast_date": "2025-03-10",
+        "city": "Morioka",
+        "country": "Japan",
+        "risk_level": "Medio",
+        "event_description": "Un incendio forestal significativo detectado en Jap\u00f3n podr\u00eda causar evacuaciones locales limitadas. Seg\u00fan GDACS, el \u00e1rea afectada a\u00fan est\u00e1 evaluando el potencial de propagaci\u00f3n. No se reportan da\u00f1os extensos hasta ahora, pero la proximidad a centros urbanos puede elevar el nivel de riesgo.",
+        "estimated_migrants": 300,
+        "modules_needed": 10,
+        "logistics_route": "Ruta principal por carretera desde Fukuoka hacia Morioka, utilizando la ruta nacional 10."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           32.6178,
           46.6558
         ]
@@ -199,6 +219,26 @@
         "estimated_migrants": 90,
         "modules_needed": 15,
         "logistics_route": "Ruta principal por v\u00eda mar\u00edtima desde Tenerife a El Hierro, seguido de distribuci\u00f3n local en la isla."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.3415,
+          51.7339
+        ]
+      },
+      "properties": {
+        "forecast_date": "2025-06-20",
+        "city": "Sumy",
+        "country": "Ukraine",
+        "risk_level": "Alto",
+        "event_description": "Una serie de ataques a\u00e9reos y enfrentamientos entre las fuerzas militares de Rusia y Ucrania en m\u00faltiples localidades de Ucrania indican un alto riesgo de desplazamiento. La concentraci\u00f3n de ataques en la regi\u00f3n de Sumy, junto con los informes de violencia sin bajas conocidas, sugiere un entorno altamente inestable que probablemente cause la migraci\u00f3n de civiles hacia zonas m\u00e1s seguras.",
+        "estimated_migrants": 5000,
+        "modules_needed": 167,
+        "logistics_route": "Ruta principal por carretera M7 desde Sumy hacia Chernihiv."
       }
     }
   ]
